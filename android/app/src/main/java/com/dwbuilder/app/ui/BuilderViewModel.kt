@@ -7,12 +7,17 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.dwbuilder.app.data.DataProvider
+import com.dwbuilder.app.data.DraftStore
 import com.dwbuilder.app.data.GameData
 import com.dwbuilder.app.domain.Points
+import com.dwbuilder.app.domain.ShrineRules
+import com.dwbuilder.app.domain.ShrineRules.WithdrawGuard
 import com.dwbuilder.app.domain.Transfer
 import com.dwbuilder.app.domain.model.Attributes
 import com.dwbuilder.app.domain.model.Build
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 /** Which attribute store a stepper edits. */
@@ -33,10 +38,17 @@ class BuilderViewModel(app: Application) : AndroidViewModel(app) {
     var build by mutableStateOf(Build.empty())
         private set
 
+    /** Transient shrine feedback (e.g. spare points after Shrine of Order). */
+    var shrineNotice by mutableStateOf<String?>(null)
+        private set
+
+    private var draftSaveJob: Job? = null
+
     init {
         viewModelScope.launch(Dispatchers.IO) {
             try {
                 data = DataProvider.get(getApplication())
+                restoreDraft()
             } catch (t: Throwable) {
                 error = t.message ?: t.javaClass.simpleName
             }
@@ -45,8 +57,33 @@ class BuilderViewModel(app: Application) : AndroidViewModel(app) {
 
     val pointsLeft: Int get() = Points.pointsLeft(build)
 
+    /**
+     * Every mutation re-persists the build as a local draft (debounced, like
+     * the site's `localStorage._dwb.draft.v1` writes).
+     */
     private fun patch(transform: (Build) -> Build) {
         build = transform(build)
+        scheduleDraftSave()
+    }
+
+    private fun scheduleDraftSave() {
+        draftSaveJob?.cancel()
+        draftSaveJob = viewModelScope.launch {
+            delay(400)
+            DraftStore.save(getApplication(), build, build.shrineMode)
+        }
+    }
+
+    private fun restoreDraft() {
+        val draft = DraftStore.load(getApplication()) ?: return
+        build = draft.build.copy(shrineMode = draft.phase)
+    }
+
+    /** Fresh build; wipes the saved draft too ("New build"). */
+    fun resetBuild() {
+        DraftStore.clear(getApplication())
+        build = Build.empty()
+        shrineNotice = null
     }
 
     // ----- identity -----
@@ -181,5 +218,82 @@ class BuilderViewModel(app: Application) : AndroidViewModel(app) {
                 mantras = mantras,
             )
         }
+    }
+
+    // ----- shrine of order / mastery -----
+
+    private fun raceBonuses(): Map<String, Int> {
+        val d = data ?: return emptyMap()
+        return if (build.multifaceted) emptyMap()
+        else d.aspect(build.race)?.statBonuses ?: emptyMap()
+    }
+
+    private fun talents(): Map<String, com.dwbuilder.app.domain.model.Talent> = data?.talents ?: emptyMap()
+
+    /** `applyShrineOrder` — snapshot + redistribute; reports freed points. */
+    fun applyShrineOrder() {
+        val result = ShrineRules.applyOrder(build, raceBonuses())
+        patch { result.build }
+        shrineNotice = if (result.sparePoints > 0) {
+            "Shrine of Order applied · ${result.sparePoints} spare " +
+                (if (result.sparePoints == 1) "point" else "points")
+        } else {
+            "Shrine of Order applied"
+        }
+    }
+
+    fun savePreShrine() {
+        val next = ShrineRules.savePre(build) ?: return
+        patch { next }
+        shrineNotice = "Pre-shrine state saved"
+    }
+
+    fun savePostShrine() {
+        val next = ShrineRules.savePost(build) ?: return
+        patch { next }
+        shrineNotice = "Post-shrine state saved"
+    }
+
+    fun loadPreShrine() {
+        val next = ShrineRules.loadPre(build) ?: return
+        patch { next }
+        shrineNotice = "Loaded pre-shrine state"
+    }
+
+    fun loadPostShrine() {
+        val next = ShrineRules.loadPost(build) ?: return
+        patch { next }
+        shrineNotice = "Loaded post-shrine state"
+    }
+
+    /** True when the pre-shrine snapshot exists (phase locks / re-shrine hints). */
+    val hasPreShrine: Boolean get() = ShrineRules.hasPreShrine(build)
+    val hasPostShrine: Boolean get() = ShrineRules.hasPostShrine(build)
+
+    /** Why a mastery-withdrawal change is (not) allowed, mirroring the dialog's `ue`. */
+    fun withdrawGuard(phase: String, statName: String, candidate: Int, reshrine: Boolean): WithdrawGuard {
+        val refs = ShrineRules.allStats(build.attributes)
+        val ref = refs.firstOrNull { it.name == statName } ?: return WithdrawGuard.ABOVE_STAT
+        return ShrineRules.guard(build, talents(), raceBonuses(), phase, ref, candidate, reshrine)
+    }
+
+    /** Stepper mutation for a mastery withdrawal (no-op when the guard refuses). */
+    fun setMasteryWithdrawal(phase: String, statName: String, candidate: Int, reshrine: Boolean) {
+        val refs = ShrineRules.allStats(build.attributes)
+        val ref = refs.firstOrNull { it.name == statName } ?: return
+        if (ShrineRules.guard(build, talents(), raceBonuses(), phase, ref, candidate, reshrine) != WithdrawGuard.OK) return
+        patch { ShrineRules.setWithdrawal(it, phase, ref, candidate) }
+    }
+
+    /** SoM dialog Apply: commit both maps (optionally re-running Shrine of Order). */
+    fun applyMasteries(reshrine: Boolean) {
+        patch { ShrineRules.applyMasteries(it, it.preMastery, it.postMastery, reshrine, raceBonuses()) }
+        shrineNotice = if (reshrine) "Shrine of Mastery applied · Shrine of Order re-run"
+        else "Shrine of Mastery applied"
+    }
+
+    fun resetMastery() {
+        patch { ShrineRules.resetMastery(it) }
+        shrineNotice = "Mastery resets"
     }
 }

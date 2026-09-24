@@ -37,7 +37,7 @@ class BuildContext(
  */
 object Stats {
     fun statValue(build: Build, name: String): Int {
-        val a = build.attributes
+        val a = ShrineRules.effectiveAttributes(build)
         return when (name) {
             "Power" -> Points.power(build)
             "Body" -> maxOf(a.base["Strength"] ?: 0, a.base["Agility"] ?: 0, a.base["Fortitude"] ?: 0)

@@ -1,0 +1,567 @@
+{
+  "budget": 330,
+  "cases": [
+    {
+      "derived": {
+        "pointsLeft": 330,
+        "pointsUntilNextPower": 15,
+        "power": 0,
+        "spent": 0
+      },
+      "effective": {
+        "attunement": {},
+        "base": {},
+        "weapon": {}
+      },
+      "input": {
+        "attunement": {},
+        "base": {},
+        "weapon": {}
+      },
+      "mastery": {},
+      "name": "empty",
+      "order": {
+        "post": {
+          "attunement": {},
+          "base": {},
+          "weapon": {}
+        },
+        "sparePoints": 0
+      },
+      "raceBonuses": {},
+      "redistributed": {
+        "attunement": {},
+        "base": {},
+        "weapon": {}
+      }
+    },
+    {
+      "derived": {
+        "pointsLeft": 270,
+        "pointsUntilNextPower": 15,
+        "power": 3,
+        "spent": 60
+      },
+      "effective": {
+        "attunement": {},
+        "base": {
+          "Agility": 10,
+          "Charisma": 10,
+          "Fortitude": 10,
+          "Intelligence": 10,
+          "Strength": 10,
+          "Willpower": 10
+        },
+        "weapon": {}
+      },
+      "input": {
+        "attunement": {},
+        "base": {
+          "Agility": 10,
+          "Charisma": 10,
+          "Fortitude": 10,
+          "Intelligence": 10,
+          "Strength": 10,
+          "Willpower": 10
+        },
+        "weapon": {}
+      },
+      "mastery": {},
+      "name": "uniform-10",
+      "order": {
+        "post": {
+          "attunement": {},
+          "base": {
+            "Agility": 10,
+            "Charisma": 10,
+            "Fortitude": 10,
+            "Intelligence": 10,
+            "Strength": 10,
+            "Willpower": 10
+          },
+          "weapon": {}
+        },
+        "sparePoints": 0
+      },
+      "raceBonuses": {},
+      "redistributed": {
+        "attunement": {},
+        "base": {
+          "Agility": 10,
+          "Charisma": 10,
+          "Fortitude": 10,
+          "Intelligence": 10,
+          "Strength": 10,
+          "Willpower": 10
+        },
+        "weapon": {}
+      }
+    },
+    {
+      "derived": {
+        "pointsLeft": 229,
+        "pointsUntilNextPower": 4,
+        "power": 5,
+        "spent": 101
+      },
+      "effective": {
+        "attunement": {},
+        "base": {
+          "Fortitude": 1,
+          "Strength": 100
+        },
+        "weapon": {}
+      },
+      "input": {
+        "attunement": {},
+        "base": {
+          "Fortitude": 1,
+          "Strength": 100
+        },
+        "weapon": {}
+      },
+      "mastery": {},
+      "name": "spike-100-1",
+      "order": {
+        "post": {
+          "attunement": {},
+          "base": {
+            "Fortitude": 26,
+            "Strength": 75
+          },
+          "weapon": {}
+        },
+        "sparePoints": 0
+      },
+      "raceBonuses": {},
+      "redistributed": {
+        "attunement": {},
+        "base": {
+          "Fortitude": 26,
+          "Strength": 75
+        },
+        "weapon": {}
+      }
+    },
+    {
+      "derived": {
+        "pointsLeft": 200,
+        "pointsUntilNextPower": 5,
+        "power": 7,
+        "spent": 130
+      },
+      "effective": {
+        "attunement": {},
+        "base": {
+          "Agility": 30,
+          "Strength": 100
+        },
+        "weapon": {}
+      },
+      "input": {
+        "attunement": {},
+        "base": {
+          "Agility": 30,
+          "Strength": 100
+        },
+        "weapon": {}
+      },
+      "mastery": {},
+      "name": "two-100-30",
+      "order": {
+        "post": {
+          "attunement": {},
+          "base": {
+            "Agility": 55,
+            "Strength": 75
+          },
+          "weapon": {}
+        },
+        "sparePoints": 0
+      },
+      "raceBonuses": {},
+      "redistributed": {
+        "attunement": {},
+        "base": {
+          "Agility": 55,
+          "Strength": 75
+        },
+        "weapon": {}
+      }
+    },
+    {
+      "derived": {
+        "pointsLeft": 319,
+        "pointsUntilNextPower": 19,
+        "power": 0,
+        "spent": 11
+      },
+      "effective": {
+        "attunement": {},
+        "base": {
+          "Fortitude": 1,
+          "Strength": 10
+        },
+        "weapon": {}
+      },
+      "input": {
+        "attunement": {},
+        "base": {
+          "Fortitude": 1,
+          "Strength": 10
+        },
+        "weapon": {}
+      },
+      "mastery": {},
+      "name": "floor-loss",
+      "order": {
+        "post": {
+          "attunement": {},
+          "base": {
+            "Fortitude": 5,
+            "Strength": 5
+          },
+          "weapon": {}
+        },
+        "sparePoints": 1
+      },
+      "raceBonuses": {},
+      "redistributed": {
+        "attunement": {},
+        "base": {
+          "Fortitude": 5,
+          "Strength": 5
+        },
+        "weapon": {}
+      }
+    },
+    {
+      "derived": {
+        "pointsLeft": 190,
+        "pointsUntilNextPower": 10,
+        "power": 8,
+        "spent": 140
+      },
+      "effective": {
+        "attunement": {},
+        "base": {
+          "Agility": 10,
+          "Fortitude": 30,
+          "Strength": 100
+        },
+        "weapon": {}
+      },
+      "input": {
+        "attunement": {},
+        "base": {
+          "Agility": 10,
+          "Fortitude": 30,
+          "Strength": 100
+        },
+        "weapon": {}
+      },
+      "mastery": {},
+      "name": "three-100-30-10",
+      "order": {
+        "post": {
+          "attunement": {},
+          "base": {
+            "Agility": 32,
+            "Fortitude": 32,
+            "Strength": 75
+          },
+          "weapon": {}
+        },
+        "sparePoints": 1
+      },
+      "raceBonuses": {},
+      "redistributed": {
+        "attunement": {},
+        "base": {
+          "Agility": 32,
+          "Fortitude": 32,
+          "Strength": 75
+        },
+        "weapon": {}
+      }
+    },
+    {
+      "derived": {
+        "pointsLeft": 290,
+        "pointsUntilNextPower": 5,
+        "power": 1,
+        "spent": 40
+      },
+      "effective": {
+        "attunement": {},
+        "base": {
+          "Agility": 10,
+          "Strength": 30
+        },
+        "weapon": {}
+      },
+      "input": {
+        "attunement": {},
+        "base": {
+          "Agility": 10,
+          "Strength": 30
+        },
+        "weapon": {}
+      },
+      "mastery": {},
+      "name": "race-floor",
+      "order": {
+        "post": {
+          "attunement": {},
+          "base": {
+            "Agility": 20,
+            "Strength": 20
+          },
+          "weapon": {}
+        },
+        "sparePoints": 0
+      },
+      "raceBonuses": {
+        "Strength": 20
+      },
+      "redistributed": {
+        "attunement": {},
+        "base": {
+          "Agility": 20,
+          "Strength": 20
+        },
+        "weapon": {}
+      }
+    },
+    {
+      "derived": {
+        "pointsLeft": 190,
+        "pointsUntilNextPower": 10,
+        "power": 8,
+        "spent": 140
+      },
+      "effective": {
+        "attunement": {
+          "Flamecharm": 10
+        },
+        "base": {
+          "Agility": 30,
+          "Strength": 100
+        },
+        "weapon": {}
+      },
+      "input": {
+        "attunement": {
+          "Flamecharm": 10
+        },
+        "base": {
+          "Agility": 30,
+          "Strength": 100
+        },
+        "weapon": {}
+      },
+      "mastery": {},
+      "name": "attunement-absorb",
+      "order": {
+        "post": {
+          "attunement": {
+            "Flamecharm": 32
+          },
+          "base": {
+            "Agility": 32,
+            "Strength": 75
+          },
+          "weapon": {}
+        },
+        "sparePoints": 1
+      },
+      "raceBonuses": {},
+      "redistributed": {
+        "attunement": {
+          "Flamecharm": 32
+        },
+        "base": {
+          "Agility": 32,
+          "Strength": 75
+        },
+        "weapon": {}
+      }
+    },
+    {
+      "derived": {
+        "pointsLeft": 130,
+        "pointsUntilNextPower": 10,
+        "power": 12,
+        "spent": 200
+      },
+      "effective": {
+        "attunement": {},
+        "base": {
+          "Agility": 20,
+          "Charisma": 20,
+          "Fortitude": 20,
+          "Intelligence": 20,
+          "Strength": 100,
+          "Willpower": 20
+        },
+        "weapon": {}
+      },
+      "input": {
+        "attunement": {},
+        "base": {
+          "Agility": 20,
+          "Charisma": 20,
+          "Fortitude": 20,
+          "Intelligence": 20,
+          "Strength": 100,
+          "Willpower": 20
+        },
+        "weapon": {}
+      },
+      "mastery": {},
+      "name": "six-100-20x5",
+      "order": {
+        "post": {
+          "attunement": {},
+          "base": {
+            "Agility": 25,
+            "Charisma": 25,
+            "Fortitude": 25,
+            "Intelligence": 25,
+            "Strength": 75,
+            "Willpower": 25
+          },
+          "weapon": {}
+        },
+        "sparePoints": 0
+      },
+      "raceBonuses": {},
+      "redistributed": {
+        "attunement": {},
+        "base": {
+          "Agility": 25,
+          "Charisma": 25,
+          "Fortitude": 25,
+          "Intelligence": 25,
+          "Strength": 75,
+          "Willpower": 25
+        },
+        "weapon": {}
+      }
+    },
+    {
+      "derived": {
+        "pointsLeft": 215,
+        "pointsUntilNextPower": 5,
+        "power": 6,
+        "spent": 115
+      },
+      "effective": {
+        "attunement": {},
+        "base": {
+          "Agility": 10,
+          "Fortitude": 30,
+          "Strength": 75
+        },
+        "weapon": {}
+      },
+      "input": {
+        "attunement": {},
+        "base": {
+          "Agility": 10,
+          "Fortitude": 30,
+          "Strength": 100
+        },
+        "weapon": {}
+      },
+      "mastery": {
+        "Strength": 25
+      },
+      "name": "pre-mastery",
+      "order": {
+        "post": {
+          "attunement": {},
+          "base": {
+            "Agility": 32,
+            "Fortitude": 32,
+            "Strength": 50
+          },
+          "weapon": {}
+        },
+        "sparePoints": 1
+      },
+      "raceBonuses": {},
+      "redistributed": {
+        "attunement": {},
+        "base": {
+          "Agility": 32,
+          "Fortitude": 32,
+          "Strength": 75
+        },
+        "weapon": {}
+      }
+    },
+    {
+      "derived": {
+        "pointsLeft": 195,
+        "pointsUntilNextPower": 15,
+        "power": 8,
+        "spent": 135
+      },
+      "effective": {
+        "attunement": {
+          "Flamecharm": 20
+        },
+        "base": {
+          "Agility": 10,
+          "Fortitude": 30,
+          "Strength": 75
+        },
+        "weapon": {}
+      },
+      "input": {
+        "attunement": {
+          "Flamecharm": 20
+        },
+        "base": {
+          "Agility": 10,
+          "Fortitude": 30,
+          "Strength": 100
+        },
+        "weapon": {}
+      },
+      "mastery": {
+        "Strength": 25
+      },
+      "name": "effective-power",
+      "order": {
+        "post": {
+          "attunement": {
+            "Flamecharm": 28
+          },
+          "base": {
+            "Agility": 28,
+            "Fortitude": 28,
+            "Strength": 50
+          },
+          "weapon": {}
+        },
+        "sparePoints": 1
+      },
+      "raceBonuses": {},
+      "redistributed": {
+        "attunement": {
+          "Flamecharm": 28
+        },
+        "base": {
+          "Agility": 28,
+          "Fortitude": 28,
+          "Strength": 75
+        },
+        "weapon": {}
+      }
+    }
+  ],
+  "qo": 25,
+  "statCap": 100
+}

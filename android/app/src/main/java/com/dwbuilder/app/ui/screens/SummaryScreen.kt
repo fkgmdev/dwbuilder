@@ -32,6 +32,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import com.dwbuilder.app.data.GameData
 import com.dwbuilder.app.domain.Points
+import com.dwbuilder.app.domain.ShrineRules
 import com.dwbuilder.app.domain.TalentRules
 import com.dwbuilder.app.domain.Transfer
 import com.dwbuilder.app.domain.model.Build
@@ -82,6 +83,17 @@ fun SummaryScreen(vm: BuilderViewModel) {
                         },
                         modifier = Modifier.fillMaxWidth(),
                     ) { Text("Import in-game build…") }
+                    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                        OutlinedButton(
+                            onClick = { vm.resetBuild() },
+                            modifier = Modifier.weight(1f),
+                        ) { Text("New build") }
+                        OutlinedButton(
+                            onClick = { vm.applyShrineOrder() },
+                            modifier = Modifier.weight(1f),
+                            enabled = !ShrineRules.isEmpty(build.attributes),
+                        ) { Text("Shrine of Order") }
+                    }
                     Text(
                         "The in-game transfer format (name, LVL header, stats, talents, mantras) is shared with deepwoken.co — paste this text into the site's Import dialog, or paste in-game text here.",
                         style = MaterialTheme.typography.labelSmall,

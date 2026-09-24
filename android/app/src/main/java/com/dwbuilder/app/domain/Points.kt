@@ -3,12 +3,17 @@ package com.dwbuilder.app.domain
 import com.dwbuilder.app.domain.model.Build
 
 /**
- * Point/power math — exact port of KwKd8cfB.js (`Pn`, `Jn`, `Ab`, `Ob`, `Wo`, `Vo`).
+ * Point/power math — exact port of KwKd8cfB.js (`Pn`, `Jn`, `Ab`, `Ob`, `Wo`,
+ * `Vo`). The site computes these over the *effective* attributes (`w` = stored
+ * points minus the active shrine-mastery withdrawals), so every entry point
+ * here first applies `ShrineRules.effectiveAttributes`.
  */
 object Points {
 
     /** Total attribute budget (site's Rb = 330). */
     const val BUDGET: Int = 330
+
+    private fun attrs(build: Build) = ShrineRules.effectiveAttributes(build)
 
     /** Sum of the values in a map (treating nulls as 0). */
     fun sum(values: Map<String, Int>): Int = values.values.sum()
@@ -22,9 +27,10 @@ object Points {
      *           − 1 for each extra attunement past the first that has ≥ 1 point
      */
     fun spent(build: Build): Int {
-        var total = sum(build.attributes.base) + sum(build.attributes.weapon) + sum(build.attributes.attunement)
+        val a = attrs(build)
+        var total = sum(a.base) + sum(a.weapon) + sum(a.attunement)
         var hadAttunement = false
-        for (value in build.attributes.attunement.values) {
+        for (value in a.attunement.values) {
             if (hadAttunement && value > 0) total--
             if (value >= 1) hadAttunement = true
         }

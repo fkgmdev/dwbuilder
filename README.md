@@ -16,17 +16,19 @@ dwbuilder/
 │   │   ├── src/main/
 │   │   │   ├── java/com/dwbuilder/app/
 │   │   │   │   ├── MainActivity.kt        # entry point: theme + bottom-nav + tabs
-│   │   │   │   ├── data/                  # loading bundled JSON → GameData
+│   │   │   │   ├── data/                  # loading bundled JSON → GameData, draft store
 │   │   │   │   ├── domain/                # pure Kotlin game rules (JS ports)
 │   │   │   │   └── ui/                    # Compose screens, theme, ViewModel
 │   │   │   ├── assets/data/*.json         # minified game data (checked in, ships in APK)
 │   │   │   └── res/                       # launcher icon, manifest theme
 │   │   ├── src/test/                      # JVM unit tests (no device needed)
+│   │   │   └── resources/golden/shrine.json   # python-generated shrine fixtures
 │   │   └── build.gradle.kts
 │   ├── gradle/, gradlew, gradlew.bat     # the Gradle build tool + wrapper
 │   └── keystore/                          # RELEASE SIGNING KEY — gitignored, keep safe
 ├── data/raw/                    # human-readable source JSON (edit these)
 ├── scripts/build_assets.py      # minify data/raw → app assets + test resources
+├── scripts/golden_shrine.py     # independent Python port of the shrine JS → golden fixtures
 ├── www/                         # captured deepwoken.co site bundles (re-capture reference)
 └── docs/site-reference.md       # extracts of the site's JS engines we ported
 ```
@@ -35,11 +37,16 @@ dwbuilder/
 
 1. **`data/`** — `DataProvider` loads every bundled JSON file once at startup into
    `GameData`, an immutable in-memory catalog (1155 talents, 267 mantras, 271
-   weapons, 35 damage mods, …). No Room, no network.
+   weapons, 35 damage mods, …). No Room, no network. `DraftStore`/`BuildJson`
+   mirror the site's `localStorage` draft (`{version, build, phase, timestamp}`)
+   in SharedPreferences: every change is debounce-saved and restored on launch.
 2. **`domain/`** — pure, unit-tested rules with **no Android imports**:
    `Points` (power/points math), `TalentRules`, `MantraRules`, `Requirements`,
-   `DamageRules` (weapon damage breakdown), `PveRules` (PvE calculator).
+   `DamageRules` (weapon damage breakdown), `PveRules` (PvE calculator),
+   `ShrineRules` (Shrine of Order redistribution + Shrine of Mastery budget/pins).
    These are exact ports of the site's JS so numbers match the live builder.
+   Points/power and requirement checks run over *effective* attributes
+   (stored points minus active mastery withdrawals), matching the site.
 3. **`ui/`** — Compose screens. `BuilderViewModel` holds the working `Build`
    (an immutable data class); every tap produces a new `Build`, which
    recomposes the screen. Tabs are wired in `MainActivity`.
@@ -110,5 +117,8 @@ adb logcat                                      # live logs (crash traces here)
   parameter, wire it into the tab.
 - **Change a rule** (e.g. power curve): edit the matching object in `domain/`,
   then `./gradlew :app:testDebugUnitTest` — all engine behavior is pinned by tests.
+  Shrine behavior is additionally pinned against `scripts/golden_shrine.py`'s
+  fixtures (`src/test/resources/golden/shrine.json`) — an independent Python
+  port of the site's JavaScript, so a Kotlin change must match both.
 - **Theme/colors**: `ui/theme/Theme.kt` and `ui/Colors.kt` (attunement/rarity palettes).
 - **Reusable UI**: `ui/components/Components.kt` (steppers, dropdowns, cards, chips).

@@ -24,6 +24,11 @@ data class Build(
     val multifaceted: Boolean = false,  // "Multifaceted" checkbox (no racial bonus)
     val traits: Map<String, Int> = emptyMap(),   // Vitality/Erudition/Proficiency/Songchant (0-6 each, pool 12)
     val tuning: Tuning = Tuning(),      // weapon-tab damage tuning state
+    val shrineMode: String = "",        // "" | "pre" | "post" (site's `shrineMode`)
+    val preShrine: Attributes? = null,  // attributes snapshot before Shrine of Order ran
+    val postShrine: Attributes? = null, // attributes snapshot saved as post-shrine state
+    val preMastery: Map<String, Int> = emptyMap(),   // stat -> points withdrawn (pre-phase SoM)
+    val postMastery: Map<String, Int> = emptyMap(),  // stat -> points withdrawn (post-phase SoM)
 ) {
     fun copyWith(patch: BuildPatch): Build = patch(this)
 
