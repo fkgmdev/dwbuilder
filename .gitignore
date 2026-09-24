@@ -5,6 +5,10 @@ android/app/build/
 android/local.properties
 android/captures/
 
+# Release signing (never commit keystores or passwords)
+android/keystore.properties
+android/keystore/
+
 # Kotlin
 .kotlin/
 
