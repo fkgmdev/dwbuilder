@@ -1,0 +1,55 @@
+[
+ {
+  "name": "None",
+  "description": null
+ },
+ {
+  "name": "Blind",
+  "description": "You cannot see.",
+  "wiki": "Severely darkens the surrounding area. This flaw makes you immune to Flame Blind and Gaze, and allows you to obtain Blindseer without a Blindfold. Also turns your eyes white.\n\nGremors have a glow that allows them to see slightly further while blind.\n"
+ },
+ {
+  "name": "Deficient",
+  "description": "You regenerate Ether more slowly."
+ },
+ {
+  "name": "Fugitive",
+  "description": "Your past isn't so spotless. All Factions hate you.",
+  "wiki": "You start with much lower reputation for all factions."
+ },
+ {
+  "name": "Glutton",
+  "description": "Your hunger and thirst is depleted faster.",
+  "wiki": "Increases the rate that your stomach and thirst bars passively deplete. This does not affect non-passive stomach or thirst loss (e.g. Enchantments)."
+ },
+ {
+  "name": "Haemophilia",
+  "description": "You bleed more.",
+  "wiki": "Increases blood **loss** from taking damage. Blood **drain** effects are unaffected."
+ },
+ {
+  "name": "Manic",
+  "description": "All insanity gained from attacks is heavily amplified.",
+  "wiki": "Increases sanity lost from sanity-draining attacks."
+ },
+ {
+  "name": "Obvious",
+  "description": "Enemies detect you more easily.",
+  "wiki": "Reduces your starting stealth by 20%."
+ },
+ {
+  "name": "Simple",
+  "description": "You learn things at a slower rate than others.",
+  "wiki": "Requires exponentially more EXP curve to Power up, and reduce all Knowledge gain by 25%, rounded to the nearest whole number."
+ },
+ {
+  "name": "Squeamish",
+  "description": "Having to physically take the life of another makes you lose stomach.",
+  "wiki": "Lose a small amount of stomach meter when manually executing others and killing monsters. Alternative execution methods (e.g. drowning, burning, or any autoexexute) will bypass this effect."
+ },
+ {
+  "name": "Vegetarian",
+  "description": "Eating the flesh of animals has a chance to make you vomit.",
+  "wiki": "Grants a 50% chance to vomit when consuming meat-based food items. The Bloodrend Cantrip does not bypass this limitation.\n\nMutually exclusive with [Carnivore](/wiki/talent/Carnivore).\n\nCannot be rolled from the Shrine of Blasphemy."
+ }
+]

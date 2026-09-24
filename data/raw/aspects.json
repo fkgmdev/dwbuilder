@@ -1,0 +1,118 @@
+[
+ {
+  "name": "None",
+  "statBonuses": {},
+  "wiki": "Hey, there's nothing here!"
+ },
+ {
+  "name": "Etrean",
+  "statBonuses": {
+   "Agility": 2,
+   "Intelligence": 3
+  }
+ },
+ {
+  "name": "Celtor",
+  "statBonuses": {
+   "Intelligence": 2,
+   "Charisma": 3
+  }
+ },
+ {
+  "name": "Adret",
+  "statBonuses": {
+   "Willpower": 2,
+   "Charisma": 3
+  }
+ },
+ {
+  "name": "Canor",
+  "statBonuses": {
+   "Strength": 3,
+   "Charisma": 2
+  }
+ },
+ {
+  "name": "Gremor",
+  "statBonuses": {
+   "Strength": 2,
+   "Fortitude": 3
+  }
+ },
+ {
+  "name": "Khan",
+  "statBonuses": {
+   "Strength": 3,
+   "Agility": 2
+  }
+ },
+ {
+  "name": "Felinor",
+  "statBonuses": {
+   "Agility": 3,
+   "Charisma": 2
+  }
+ },
+ {
+  "name": "Chrysid",
+  "statBonuses": {
+   "Agility": 2,
+   "Charisma": 3
+  }
+ },
+ {
+  "name": "Vesperian",
+  "statBonuses": {
+   "Fortitude": 3,
+   "Willpower": 2
+  }
+ },
+ {
+  "name": "Capra",
+  "statBonuses": {
+   "Intelligence": 3,
+   "Willpower": 2
+  }
+ },
+ {
+  "name": "Ganymede",
+  "statBonuses": {
+   "Intelligence": 2,
+   "Willpower": 3
+  }
+ },
+ {
+  "name": "Tiran",
+  "statBonuses": {
+   "Agility": 3,
+   "Willpower": 2
+  },
+  "wiki": ""
+ },
+ {
+  "name": "Drakkard",
+  "statBonuses": {
+   "Agility": 2,
+   "Fortitude": 3
+  }
+ },
+ {
+  "name": "Kiron",
+  "statBonuses": {
+   "Agility": 3,
+   "Intelligence": 2
+  }
+ },
+ {
+  "name": "Lightborn",
+  "statBonuses": {
+   "Strength": 2,
+   "Fortitude": 2,
+   "Agility": 2,
+   "Intelligence": 2,
+   "Willpower": 2,
+   "Charisma": 2
+  },
+  "wiki": ""
+ }
+]

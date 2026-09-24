@@ -1,0 +1,1 @@
+import{g as l,v as e}from"./KwKd8cfB.js";const m=3;function f(t){const s=l(),c=()=>typeof t=="function"?t():t,n=e(()=>(s.me?.permissionLevel??0)>=m),o=e(()=>{const r=s.me,u=c();return!r||!u?!1:u===r.id}),a=e(()=>o.value||n.value),i=e(()=>n.value&&!o.value);return{canModerate:n,isOwner:o,canDelete:a,isModeratingNotOwner:i}}export{f as u};

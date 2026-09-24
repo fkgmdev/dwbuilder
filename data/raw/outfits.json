@@ -1,0 +1,3726 @@
+[
+ {
+  "name": "Mod Suit",
+  "tier": "Spec",
+  "description": "Just another day at the office.",
+  "durability": 100,
+  "physicalResistance": null,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": null,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [],
+  "craftingMaterials": [],
+  "cost": null,
+  "requirements": {
+   "objectives": [
+    "Purchased from the Mod Shop."
+   ]
+  },
+  "image": null
+ },
+ {
+  "name": "Mod Skirt",
+  "tier": "Spec",
+  "description": "Just another day at the office.",
+  "durability": 100,
+  "physicalResistance": null,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": null,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [],
+  "craftingMaterials": [],
+  "cost": null,
+  "requirements": {
+   "objectives": [
+    "Purchased from the Mod Shop."
+   ]
+  },
+  "image": null
+ },
+ {
+  "name": "White Mod Suit",
+  "tier": "Spec",
+  "description": "Fashioned after the Dragon of Dojima.\r\n",
+  "durability": 100,
+  "physicalResistance": null,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": null,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [],
+  "craftingMaterials": [],
+  "cost": null,
+  "requirements": {
+   "objectives": [
+    "Purchased from the Mod Shop."
+   ]
+  },
+  "image": null
+ },
+ {
+  "name": "Mod Hoodie",
+  "tier": "Spec",
+  "description": "Increases your coolness attribute.\r",
+  "durability": 100,
+  "physicalResistance": null,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": null,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [],
+  "craftingMaterials": [],
+  "cost": null,
+  "requirements": {
+   "objectives": [
+    "Purchased from the Mod Shop."
+   ]
+  },
+  "image": null
+ },
+ {
+  "name": "Mod Business Competitive",
+  "tier": "Spec",
+  "description": "The ticket grind never stops.\r",
+  "durability": 100,
+  "physicalResistance": null,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": null,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [],
+  "craftingMaterials": [],
+  "cost": null,
+  "requirements": {
+   "objectives": [
+    "Purchased from the Mod Shop."
+   ]
+  },
+  "image": null
+ },
+ {
+  "name": "Auroran Gremor",
+  "tier": "Spec",
+  "description": "Armor of the Auroran Gremor\r\n",
+  "durability": 2600,
+  "physicalResistance": 30,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 30,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": 20,
+  "windResistance": null,
+  "shadowResistance": 20,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 100,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Frozone"
+  ],
+  "craftingMaterials": [],
+  "cost": null,
+  "requirements": {
+   "stats": {
+    "Power": 15
+   },
+   "objectives": [
+    "Given by a Developer."
+   ]
+  },
+  "image": null
+ },
+ {
+  "name": "Hive Leader's Garment",
+  "tier": "Spec",
+  "description": "The royal robes of the King of the Hive, layered in protective material and luxurious cloth alike, a one-of-a-kind garb that can only be produced every millenia.",
+  "durability": 3000,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 25,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [],
+  "craftingMaterials": [],
+  "cost": null,
+  "requirements": {
+   "stats": {
+    "Power": 15
+   },
+   "objectives": [
+    "Given by a Developer."
+   ]
+  },
+  "image": null
+ },
+ {
+  "name": "Mr Toon",
+  "tier": "Spec",
+  "description": "...",
+  "durability": 2600,
+  "physicalResistance": 30,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 30,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": 20,
+  "windResistance": null,
+  "shadowResistance": 20,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 100,
+  "additionalBuffs": "+16 Sanity",
+  "grantedTalents": [
+   "Vow of Mastery"
+  ],
+  "craftingMaterials": [],
+  "cost": null,
+  "requirements": {
+   "objectives": [
+    "Given by a Developer."
+   ]
+  },
+  "image": null
+ },
+ {
+  "name": "Soren",
+  "tier": "Spec",
+  "description": "The signature outfit of Wishmakers, a group of Lightborn sorcerers now lost to time.",
+  "durability": 4000,
+  "physicalResistance": null,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 25,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": 25,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 100,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Crippling Darkness"
+  ],
+  "craftingMaterials": [],
+  "cost": null,
+  "requirements": {
+   "objectives": [
+    "Given by a Developer."
+   ]
+  },
+  "image": null
+ },
+ {
+  "name": "Wishmaker",
+  "tier": "Spec",
+  "description": "The signature outfit of Wishmakers, a group of Lightborn sorcerers now lost to time.",
+  "durability": 4000,
+  "physicalResistance": null,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 25,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": 25,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 100,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Crippling Darkness"
+  ],
+  "craftingMaterials": [],
+  "cost": null,
+  "requirements": {
+   "objectives": [
+    "Given by a Developer."
+   ]
+  },
+  "image": null
+ },
+ {
+  "name": "Etrean Rogue",
+  "tier": "Unobtainable",
+  "description": "Sturdy leather armor, fashioned for the hunters sent down into Etrea's forest.",
+  "durability": 500,
+  "physicalResistance": null,
+  "slashResistance": 20,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": null,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Test"
+  ],
+  "craftingMaterials": [
+   "x3 Crystal Lens",
+   "x3 Spark Gland"
+  ],
+  "cost": null,
+  "requirements": {
+   "unobtainable": true
+  },
+  "image": null
+ },
+ {
+  "name": "Hive Adjudicator",
+  "tier": "Unobtainable",
+  "description": "...",
+  "durability": 1000,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 25,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Lowstride"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x1 Iron"
+  ],
+  "cost": 30,
+  "requirements": {
+   "stats": {
+    "Power": 15
+   },
+   "unobtainable": true
+  },
+  "image": null
+ },
+ {
+  "name": "Corsair Outlaw",
+  "tier": "Starter",
+  "description": "...",
+  "durability": 1200,
+  "physicalResistance": 15,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 10,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Lightweight"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x1 Aeon Logstone"
+  ],
+  "cost": null,
+  "requirements": null,
+  "image": null
+ },
+ {
+  "name": "Eager Tradesman",
+  "tier": "Starter",
+  "description": "There's work to be done. In style.",
+  "durability": 1000,
+  "physicalResistance": 10,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 5,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Knack"
+  ],
+  "craftingMaterials": [
+   "x3 Cloth",
+   "x3 Fiber"
+  ],
+  "cost": 50,
+  "requirements": null,
+  "image": null
+ },
+ {
+  "name": "Hired Mercenary",
+  "tier": "Starter",
+  "description": "A basic set of armor perfect for taking on the world!... Uhhhh... yeah.",
+  "durability": 1000,
+  "physicalResistance": 15,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 15,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x1 Iron"
+  ],
+  "cost": 25,
+  "requirements": null,
+  "image": null
+ },
+ {
+  "name": "Merchant Robes",
+  "tier": "Starter",
+  "description": "A set of merchant robes, great for selling things not so great for battle.",
+  "durability": 1200,
+  "physicalResistance": 10,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 5,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Merchant's Accord"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber"
+  ],
+  "cost": 25,
+  "requirements": null,
+  "image": null
+ },
+ {
+  "name": "Pathfinder Sorcerer",
+  "tier": "Starter",
+  "description": "Simple robes of a pathfinder.",
+  "durability": 1000,
+  "physicalResistance": 5,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 10,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Lowstride"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x1 Iron"
+  ],
+  "cost": 30,
+  "requirements": {
+   "stats": {
+    "Intelligence": 5
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Scholar",
+  "tier": "Starter",
+  "description": "Perhaps one of a few too many words, at least by the reckoning of others.",
+  "durability": 1000,
+  "physicalResistance": 8,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 10,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Scholar's Intuition"
+  ],
+  "craftingMaterials": [
+   "x3 Cloth",
+   "x3 Fiber"
+  ],
+  "cost": 50,
+  "requirements": null,
+  "image": null
+ },
+ {
+  "name": "Skeptic Pioneer",
+  "tier": "Starter",
+  "description": "A durable coat to protect you against the wear of the world.",
+  "durability": 1200,
+  "physicalResistance": 12,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 12,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Apothecary"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x1 Crystal Lens"
+  ],
+  "cost": 25,
+  "requirements": null,
+  "image": null
+ },
+ {
+  "name": "Stranded",
+  "tier": "Starter",
+  "description": "Some have a rougher start than others.",
+  "durability": null,
+  "physicalResistance": null,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": null,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [],
+  "craftingMaterials": [],
+  "cost": null,
+  "requirements": {
+   "or": [
+    {
+     "origin": "Lone Warrior"
+    },
+    {
+     "origin": "Castaway"
+    }
+   ]
+  },
+  "image": null
+ },
+ {
+  "name": "Traveller's Jacket",
+  "tier": "Starter",
+  "description": "A well-worn jacket suitable for travelling.",
+  "durability": 1000,
+  "physicalResistance": 10,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": null,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [],
+  "craftingMaterials": [
+   "x1 Cloth"
+  ],
+  "cost": 10,
+  "requirements": null,
+  "image": null
+ },
+ {
+  "name": "Whaler Initiate",
+  "tier": "Starter",
+  "description": "Coat and pseudo-uniform of Eylis' gang of assassins. The appearance of these men from the Central Luminant marks harsh times for Etrea.",
+  "durability": 1500,
+  "physicalResistance": 15,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": 25,
+  "elementalResistance": 5,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [],
+  "craftingMaterials": [],
+  "cost": null,
+  "requirements": {
+   "origin": "Voidwalker"
+  },
+  "image": null
+ },
+ {
+  "name": "Authority Peacekeeper Armor",
+  "tier": "Adept",
+  "description": "The durable battle armour of an Adretian soldier. The armour is specially forged by techniques developed in the Central Luminant, creating an uncharacteristically versatile armour plate.",
+  "durability": 1600,
+  "physicalResistance": 15,
+  "slashResistance": 10,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 10,
+  "flameResistance": 15,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Lowstride"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x1 Iron"
+  ],
+  "cost": 30,
+  "requirements": {
+   "or": [
+    {
+     "origin": "Authority Ensign"
+    },
+    {
+     "stats": {
+      "Power": 5,
+      "Fortitude": 5
+     },
+     "origin": "Authority Ensign"
+    }
+   ]
+  },
+  "image": null
+ },
+ {
+  "name": "Bounty Hunter",
+  "tier": "Adept",
+  "description": "Armor suited for hunting monsters.",
+  "durability": 1500,
+  "physicalResistance": 20,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 10,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Lightweight"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x1 Eternal Logstone"
+  ],
+  "cost": null,
+  "requirements": {
+   "stats": {
+    "Power": 5
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Carefree Garments",
+  "tier": "Adept",
+  "description": "...",
+  "durability": 2000,
+  "physicalResistance": 10,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 15,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Fleetfoot"
+  ],
+  "craftingMaterials": [
+   "x4 Cloth",
+   "x5 Fiber",
+   "x1 Glass Stone",
+   "x1 Iron"
+  ],
+  "cost": null,
+  "requirements": {
+   "stats": {
+    "Power": 6
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Cutthroat Light Armor",
+  "tier": "Adept",
+  "description": "Sturdy leather armor, fashioned for the hunters sent into the driftlands to deal with rival factions.",
+  "durability": 1000,
+  "physicalResistance": 10,
+  "slashResistance": 10,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": null,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Hunter's Reflexes"
+  ],
+  "craftingMaterials": [
+   "x4 Cloth",
+   "x4 Fiber",
+   "x5 Iron",
+   "x1 Crystal Lens"
+  ],
+  "cost": 30,
+  "requirements": {
+   "stats": {
+    "Power": 5
+   }
+  },
+  "image": null,
+  "wiki": "",
+  "VOI": false
+ },
+ {
+  "name": "Diver Apprentice Robes",
+  "tier": "Adept",
+  "description": "Robes of an Apprentice Diver. A robe weaved through the power of the Song, grants passable elemental defenses and ether regeneration.",
+  "durability": 1000,
+  "physicalResistance": 10,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 15,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 20,
+  "additionalBuffs": null,
+  "grantedTalents": [],
+  "craftingMaterials": [
+   "x4 Cloth",
+   "x4 Fiber",
+   "x3 Crystal Lens"
+  ],
+  "cost": 50,
+  "requirements": {
+   "or": [
+    {
+     "origin": "Deepbound"
+    },
+    {
+     "stats": {
+      "Power": 5,
+      "Intelligence": 10
+     }
+    }
+   ]
+  },
+  "image": null
+ },
+ {
+  "name": "Duelist's Attire",
+  "tier": "Adept",
+  "description": "The attire of a duelist for sport.",
+  "durability": 1200,
+  "physicalResistance": 20,
+  "slashResistance": 10,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": null,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [],
+  "craftingMaterials": [
+   "x5 Glass Stone"
+  ],
+  "cost": null,
+  "requirements": {
+   "stats": {
+    "Power": 5
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Experienced Adventurer",
+  "tier": "Adept",
+  "description": "You wear your experience.\r",
+  "durability": 1000,
+  "physicalResistance": 10,
+  "slashResistance": null,
+  "bluntResistance": 10,
+  "additionalStealth": null,
+  "elementalResistance": null,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Looter"
+  ],
+  "craftingMaterials": [
+   "x3 Cloth",
+   "x3 Fiber",
+   "x2 Irithine"
+  ],
+  "cost": 25,
+  "requirements": {
+   "stats": {
+    "Power": 5
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Flame Worshipper Armor",
+  "tier": "Adept",
+  "description": "Coat of the Covenant of Flame, pioneered by the Drowned Diver Amorus Pleeksty.",
+  "durability": 1000,
+  "physicalResistance": 10,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 5,
+  "flameResistance": 25,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Intrepid Flame",
+   "One With Flame"
+  ],
+  "craftingMaterials": [
+   "x4 Cloth",
+   "x4 Fiber",
+   "x2 Iron"
+  ],
+  "cost": 30,
+  "requirements": {
+   "stats": {
+    "Power": 5
+   }
+  },
+  "image": null,
+  "wiki": "",
+  "VOI": false
+ },
+ {
+  "name": "Ignition Union Uniform",
+  "tier": "Adept",
+  "description": "...",
+  "durability": 2000,
+  "physicalResistance": 22,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 22,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x3 Irithine",
+   "x1 Lionfish Scale"
+  ],
+  "cost": null,
+  "requirements": {
+   "stats": {
+    "Power": 6
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Keeper",
+  "tier": "Adept",
+  "description": "Armor with magical properties.",
+  "durability": 1000,
+  "physicalResistance": 5,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 5,
+  "flameResistance": null,
+  "iceResistance": 10,
+  "thunderResistance": null,
+  "windResistance": 10,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 20,
+  "additionalBuffs": null,
+  "grantedTalents": [],
+  "craftingMaterials": [
+   "x3 Cloth",
+   "x3 Fiber",
+   "x1 Iron"
+  ],
+  "cost": 25,
+  "requirements": {
+   "stats": {
+    "Power": 5,
+    "Intelligence": 10
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Navaen Nomad Robes",
+  "tier": "Adept",
+  "description": "Outfit of the Eastern Navaen Nomads. The frigid prisms crafted into this armor have been blessed by Navae, giving them defense against darkness and the cold",
+  "durability": 1800,
+  "physicalResistance": 10,
+  "slashResistance": null,
+  "bluntResistance": 10,
+  "additionalStealth": 50,
+  "elementalResistance": 10,
+  "flameResistance": null,
+  "iceResistance": 15,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": 15,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Fists of Navae"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x8 Erisore",
+   "x2 Frigid Prism"
+  ],
+  "cost": 100,
+  "requirements": {
+   "stats": {
+    "Power": 5
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Pathfinder Cloak",
+  "tier": "Adept",
+  "description": "A long coat hiding reptilian-like armored scales. A new pathfinder's pride.",
+  "durability": 1200,
+  "physicalResistance": 18,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 8,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Survivalist"
+  ],
+  "craftingMaterials": [
+   "x4 Cloth",
+   "x4 Fiber",
+   "x6 Iron"
+  ],
+  "cost": 30,
+  "requirements": {
+   "stats": {
+    "Power": 5
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Pathfinder Thaumaturge",
+  "tier": "Adept",
+  "description": "...",
+  "durability": 1000,
+  "physicalResistance": 15,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 10,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Lowstride"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x1 Iron"
+  ],
+  "cost": 30,
+  "requirements": {
+   "stats": {
+    "Power": 5,
+    "Intelligence": 10
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Shadow Hunter",
+  "tier": "Adept",
+  "description": "A garb commonly worn by shadowy thieves and assassins, excellent for sneaking up on enemies.",
+  "durability": 1500,
+  "physicalResistance": 10,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 5,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": 10,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Lowstride"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x2 Gold",
+   "x10 Iron"
+  ],
+  "cost": null,
+  "requirements": {
+   "stats": {
+    "Agility": 10
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Steel Plate",
+  "tier": "Adept",
+  "description": "The durable battle armour of an Adretian soldier. The armour is specially forged by techniques developed in the Central Luminant, creating an uncharacteristically versatile armour plate.",
+  "durability": 1000,
+  "physicalResistance": 5,
+  "slashResistance": 20,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": null,
+  "flameResistance": 25,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Lowstride"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x3 Iron"
+  ],
+  "cost": 30,
+  "requirements": {
+   "stats": {
+    "Power": 5,
+    "Fortitude": 10
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Summer Company Uniform",
+  "tier": "Adept",
+  "description": "An easy to reproduce armor for the summer company grunts.",
+  "durability": 1500,
+  "physicalResistance": 10,
+  "slashResistance": 10,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 5,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": 25,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Armor Piercing"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x2 Coal",
+   "x10 Iron"
+  ],
+  "cost": 100,
+  "requirements": {
+   "stats": {
+    "Power": 5
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Vigil Initiate",
+  "tier": "Adept",
+  "description": "Initiate of the Vigil. A warrior must walk the path before being granted the cloak of winds.",
+  "durability": 1200,
+  "physicalResistance": 20,
+  "slashResistance": null,
+  "bluntResistance": 10,
+  "additionalStealth": null,
+  "elementalResistance": null,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Paired Soul"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x1 Erisore",
+   "x5 Fiber",
+   "x4 Iron"
+  ],
+  "cost": null,
+  "requirements": {
+   "stats": {
+    "Power": 5
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Authority Captain Uniform",
+  "tier": "Expert",
+  "description": "The unmistakable banded coat of an Adretian Captain. Despite immediate appearances, the coat is wound with protective fibers that provide unparalleled durability.",
+  "durability": 2000,
+  "physicalResistance": 30,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 25,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x1 Dark Feather",
+   "x1 Lionfish Scale"
+  ],
+  "cost": 500,
+  "requirements": {
+   "or": [
+    {
+     "objectives": [
+      "Command Division"
+     ],
+     "origin": "Authority Ensign"
+    },
+    {
+     "stats": {
+      "Power": 10,
+      "Strength": 25
+     },
+     "origin": "Authority Ensign"
+    }
+   ]
+  },
+  "image": null
+ },
+ {
+  "name": "Cerulean Gown",
+  "tier": "Expert",
+  "description": "A bodiced sky-blue dress, with various tassels attached for decoration. Despite its initial elegant appearance, the fastened layered skirt, tight-cuffed shirt sleeves, and sturdy boots suggest the outfit is both stylish and functional, fit for both formal and perilous occasions.",
+  "durability": 1500,
+  "physicalResistance": 20,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 25,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [],
+  "craftingMaterials": [
+   "x15 Cloth",
+   "x15 Fiber",
+   "x1 Megalodaunt Hide"
+  ],
+  "cost": 200,
+  "requirements": {
+   "stats": {
+    "Power": 8
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Cloak of Winds",
+  "tier": "Expert",
+  "description": "Powerful cloak of the Vigils.",
+  "durability": 1200,
+  "physicalResistance": 20,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 30,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": 25,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Paired Soul"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x10 Erisore",
+   "x2 Strange Claw",
+   "x1 Vibrant Gem"
+  ],
+  "cost": null,
+  "requirements": {
+   "stats": {
+    "Power": 10
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Darksteel Plate",
+  "tier": "Expert",
+  "description": "The durable battle armour of an Adretian soldier. The armour is specially forged by techniques developed in the Central Luminant, creating an uncharacteristically versatile armour plate.",
+  "durability": 2500,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 25,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Unbreakable"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x5 Erisore",
+   "x1 Strange Claw",
+   "x1 Dark Feather"
+  ],
+  "cost": 300,
+  "requirements": {
+   "stats": {
+    "Power": 10,
+    "Fortitude": 20
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Diver Journeyman Robes",
+  "tier": "Expert",
+  "description": "Crafted for experienced Divers, these robes signify one who has experienced the horrors of the Deep.",
+  "durability": 1000,
+  "physicalResistance": 30,
+  "slashResistance": null,
+  "bluntResistance": 10,
+  "additionalStealth": null,
+  "elementalResistance": 20,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Lowstride"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x2 Megalodaunt Hide",
+   "x1 Iron"
+  ],
+  "cost": 30,
+  "requirements": {
+   "stats": {
+    "Power": 10
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Etrean Guard",
+  "tier": "Expert",
+  "description": "Serpentine armor of the Kingdom of Etrea. A lightweight piece of plate sits atop padded snakeskin leather.",
+  "durability": 2000,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 20,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Unbreakable"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x5 Erisore",
+   "x2 Megalodaunt Hide"
+  ],
+  "cost": 30,
+  "requirements": {
+   "stats": {
+    "Power": 10
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Grand Pathfinder Cloak",
+  "tier": "Expert",
+  "description": "A long coat hiding reptilian-like armored scales beneath. A pathfinder's pride.",
+  "durability": 2000,
+  "physicalResistance": 20,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": 40,
+  "elementalResistance": 20,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Legendary"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x5 Erisore",
+   "x5 Gold",
+   "x5 Irithine",
+   "x6 Iron",
+   "x2 Dark Feather"
+  ],
+  "cost": 150,
+  "requirements": {
+   "stats": {
+    "Power": 10
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Hive Drone",
+  "tier": "Expert",
+  "description": "Uniform of the Hive, threaded for powerful soldiers and researchers alike.",
+  "durability": 1000,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": 5,
+  "additionalStealth": null,
+  "elementalResistance": 25,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": 5,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Lowstride"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x2 Megalodaunt Hide",
+   "x1 Iron"
+  ],
+  "cost": 30,
+  "requirements": {
+   "stats": {
+    "Power": 10
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Hive Tactician Armor",
+  "tier": "Expert",
+  "description": "A fine coat interwoven with steel using Ironsing.",
+  "durability": 1200,
+  "physicalResistance": 30,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 20,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": 10,
+  "shadowResistance": null,
+  "metalResistance": 15,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Brunt"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x2 Iron",
+   "x2 Dark Feather",
+   "x3 Vibrant Gem"
+  ],
+  "cost": null,
+  "requirements": {
+   "stats": {
+    "Power": 10,
+    "Agility": 25
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Ignition Trailblazer",
+  "tier": "Expert",
+  "description": "Garb for those aspiring to become Deepdelvers",
+  "durability": 1000,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": 5,
+  "additionalStealth": null,
+  "elementalResistance": 25,
+  "flameResistance": 5,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Perseverance",
+   "Strong Stern"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x2 Megalodaunt Hide",
+   "x1 Iron"
+  ],
+  "cost": 30,
+  "requirements": {
+   "stats": {
+    "Power": 10
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Ignition Welder",
+  "tier": "Expert",
+  "description": "Sturdy workwear designed for heavy duty labour. Just remember - personal protective equipment doesn't make you invincible!",
+  "durability": 3000,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 25,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Master Craftsman"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x5 Iron",
+   "x5 Erisore"
+  ],
+  "cost": 300,
+  "requirements": {
+   "stats": {
+    "Power": 10,
+    "Fortitude": 10
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Martial Artist",
+  "tier": "Expert",
+  "description": "Show your strength.",
+  "durability": 1200,
+  "physicalResistance": 30,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 20,
+  "flameResistance": 5,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": 5,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Bruiser's Mixup"
+  ],
+  "craftingMaterials": [
+   "x7 Cloth",
+   "5 Fiber",
+   "x1 Odd Tentacle"
+  ],
+  "cost": 100,
+  "requirements": {
+   "stats": {
+    "Power": 10,
+    "Strength": 15
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Pathfinder Arch-Sorcerer",
+  "tier": "Expert",
+  "description": "Robes of a full fledged Pathfinder Sorcerer. Grants excellent elemental defense and Ether regen.",
+  "durability": 1500,
+  "physicalResistance": 10,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 25,
+  "flameResistance": null,
+  "iceResistance": 10,
+  "thunderResistance": 10,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 50,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Devastating Power"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x10 Irithine",
+   "x1 Lionfish Scale",
+   "x1 Strange Claw"
+  ],
+  "cost": 100,
+  "requirements": {
+   "stats": {
+    "Power": 10,
+    "Intelligence": 25
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Seamstress's Attire",
+  "tier": "Expert",
+  "description": "A simple yet skillfully decorated set of clothes, including a gorgeous layered and frilled skirt, as well as a ruffled shirt, topped off with a functional waistcoat. A garb favoured by craftsfolk - the little frills and ruffles are usually personal touches, showcasing wearer's skill with needle and thread.",
+  "durability": 2000,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 20,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [],
+  "craftingMaterials": [
+   "x10 Cloth",
+   "x10 Fiber",
+   "x5 Iron",
+   "x2 Megalodaunt Hide"
+  ],
+  "cost": 100,
+  "requirements": {
+   "stats": {
+    "Power": 8
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Troublemaker's Overcoat",
+  "tier": "Expert",
+  "description": "A sturdy closed overcoat covering a wholesale ankle-high frock dress, with leather-reinforced shoulderpads and bracers. Perfect for those days when you're willing to dish out a bruising, but don't want your favourite dress to be ruined in the scrapping.",
+  "durability": 2500,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 20,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [],
+  "craftingMaterials": [
+   "x10 Cloth",
+   "x10 Fiber",
+   "x5 Iron",
+   "x5 Megalodaunt Hide"
+  ],
+  "cost": 100,
+  "requirements": {
+   "stats": {
+    "Power": 8
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Varicosan Finery",
+  "tier": "Expert",
+  "description": "A gorgeously fitted remnant of high Celtorian society. Fashion speaks louder than words - what more is there to say?",
+  "durability": 1500,
+  "physicalResistance": 20,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 20,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Benefactor"
+  ],
+  "craftingMaterials": [
+   "x3 Alestrian Coral",
+   "x7 Cloth",
+   "x5 Fiber",
+   "x5 Irithine",
+   "x10 Vibrant Gem"
+  ],
+  "cost": 100,
+  "requirements": {
+   "stats": {
+    "Power": 10
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Verdant Sniper",
+  "tier": "Expert",
+  "description": "Armor once worn by a renowned master of the bow.",
+  "durability": 1500,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 20,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": 10,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [],
+  "craftingMaterials": [
+   "x10 Cloth",
+   "x2 Megalodaunt Hide",
+   "x2 Vibrant Gem"
+  ],
+  "cost": 100,
+  "requirements": {
+   "stats": {
+    "Power": 10
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Veteran Adventurer",
+  "tier": "Expert",
+  "description": "With all this experience, how could you possibly be a bad guy?",
+  "durability": 1500,
+  "physicalResistance": 15,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 15,
+  "flameResistance": 5,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": 5,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Foolish Outburst"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x2 Gold",
+   "x2 Megalodaunt Hide",
+   "x1 Strange Claw"
+  ],
+  "cost": 100,
+  "requirements": {
+   "stats": {
+    "Power": 10
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Whaler Coat",
+  "tier": "Expert",
+  "description": "Coat and pseudo-uniform of Eylis' gang of Assassins. The appearance of these men from the Central Luminant marks harsh times for Etrea.",
+  "durability": 1500,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": 50,
+  "elementalResistance": 15,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x2 Gold",
+   "x10 Iron",
+   "x2 Lionfish Scale"
+  ],
+  "cost": 100,
+  "requirements": {
+   "stats": {
+    "Power": 10
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Arachnid's Weave",
+  "tier": "Master",
+  "description": "Spun around the dantiest of spider silks, this silvery coordinate is punctuated by its iconic corset. Perhaps \"laced\" with poison?",
+  "durability": 2100,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 35,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": 10,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": 15,
+  "bloodResistance": 15,
+  "etherRegeneration": 55,
+  "additionalBuffs": "+10 Sanity",
+  "grantedTalents": [
+   "Corrosive Touch"
+  ],
+  "craftingMaterials": [
+   "x10 Cloth",
+   "x2 Fiber",
+   "x5 Spider Egg",
+   "x2 Dark Feather",
+   "x1 Bloodless Gem",
+   "x5 Vibrant Gem"
+  ],
+  "cost": 1000,
+  "requirements": {
+   "stats": {
+    "Power": 15
+   }
+  },
+  "image": null,
+  "wiki": "",
+  "VOI": false
+ },
+ {
+  "name": "Black Diver",
+  "tier": "Master",
+  "description": "Coat of an esteemed Black Diver, one of the few in many generations of Divers from the Markor Citadel.",
+  "durability": 2600,
+  "physicalResistance": 30,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 30,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": 20,
+  "windResistance": null,
+  "shadowResistance": 20,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 50,
+  "additionalBuffs": "+16 Sanity",
+  "grantedTalents": [],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x1 Blessed Gem",
+   "x5 Vibrant Gem",
+   "x1 Megalodaunt Hide",
+   "x1 Odd Tentacle",
+   "x1 Thresher Spine"
+  ],
+  "cost": 1000,
+  "requirements": {
+   "stats": {
+    "Power": 15,
+    "Willpower": 10
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Cala-Mariner",
+  "tier": "Master",
+  "description": "The tattoo sprawling across your chest serves as a physical memory of the aquatic foes you have felled, and as a keen warning to those who would stand in your way.",
+  "durability": 2200,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 35,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": 30,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": 25,
+  "etherRegeneration": 45,
+  "additionalBuffs": "+20 Sanity",
+  "grantedTalents": [
+   "Tidal Shock"
+  ],
+  "craftingMaterials": [
+   "x3 Cloth",
+   "x4 Fiber",
+   "x5 Odd Tentacle",
+   "x1 Nautilodaunt Beak",
+   "x1 Blue Gem",
+   "x10 Vibrant Gem"
+  ],
+  "cost": 1000,
+  "requirements": {
+   "stats": {
+    "Power": 15,
+    "Willpower": 5
+   }
+  },
+  "image": null,
+  "wiki": "",
+  "VOI": false
+ },
+ {
+  "name": "Celtorian Tideknight",
+  "tier": "Master",
+  "description": "...",
+  "durability": 2800,
+  "physicalResistance": 30,
+  "slashResistance": null,
+  "bluntResistance": 5,
+  "additionalStealth": null,
+  "elementalResistance": 25,
+  "flameResistance": null,
+  "iceResistance": 5,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": 10,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Tidekeeper"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x1 Bloodless Gem",
+   "x5 Vibrant Gem",
+   "x1 Dark Feather",
+   "x1 Odd Tentacle",
+   "x1 Thresher Spine",
+   "x5 Umbral Obsidian"
+  ],
+  "cost": 1000,
+  "requirements": {
+   "stats": {
+    "Power": 15
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Darkened Bastion",
+  "tier": "Master",
+  "description": "A noble's armor, shattered and reforged into a sleek and dark ensemble. The essence of Shadowcast courses through its fibers like a living entity embedded within the fabric. When you lay your hand upon it, a disquieting sensation washes over you.",
+  "durability": 2600,
+  "physicalResistance": 30,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": 50,
+  "elementalResistance": 30,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": 20,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 50,
+  "additionalBuffs": "+16 Sanity",
+  "grantedTalents": [
+   "Withering Soul"
+  ],
+  "craftingMaterials": [
+   "x7 Cloth",
+   "x5 Fiber",
+   "x5 Umbral Obsidian",
+   "x10 Vibrant Gem",
+   "x1 Void Feather"
+  ],
+  "cost": 1000,
+  "requirements": {
+   "stats": {
+    "Power": 15
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Ignition Deepdelver",
+  "tier": "Master",
+  "description": "Heavyweight armor devised for deepdelvers into the layers of the Depths.",
+  "durability": 3000,
+  "physicalResistance": 30,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 35,
+  "flameResistance": null,
+  "iceResistance": 15,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": 15,
+  "bloodResistance": null,
+  "etherRegeneration": 20,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Force Your Way"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x1 Blue Gem",
+   "x5 Vibrant Gem",
+   "x1 Bounder Claw",
+   "x1 Frozen Membrane",
+   "x1 Worn Cog"
+  ],
+  "cost": 1000,
+  "requirements": {
+   "stats": {
+    "Power": 15
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Justicar's Armor",
+  "tier": "Master",
+  "description": "...",
+  "durability": 2800,
+  "physicalResistance": 30,
+  "slashResistance": null,
+  "bluntResistance": 5,
+  "additionalStealth": null,
+  "elementalResistance": 30,
+  "flameResistance": null,
+  "iceResistance": 5,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": 5,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 20,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "The Path, Unveiled"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x1 Wayward Gem",
+   "x5 Gale Stone",
+   "x4 Thresher Spine",
+   "x1 Dark Feather"
+  ],
+  "cost": 1000,
+  "requirements": {
+   "stats": {
+    "Power": 15
+   }
+  },
+  "image": null,
+  "wiki": "",
+  "VOI": false
+ },
+ {
+  "name": "Legion Centurion",
+  "tier": "Master",
+  "description": "Armor worn by the honorary centurion of the legion, who excel in the ways of Gale Kata.",
+  "durability": 3000,
+  "physicalResistance": 30,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 30,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": 5,
+  "shadowResistance": 5,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 20,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Centurion's Resolve"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x1 Blue Gem",
+   "x5 Gale Stone",
+   "x1 Dark Feather",
+   "x1 Thresher Spine"
+  ],
+  "cost": 1000,
+  "requirements": {
+   "stats": {
+    "Power": 15,
+    "Fortitude": 10
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Navaen War Chief",
+  "tier": "Master",
+  "description": "...",
+  "durability": 3000,
+  "physicalResistance": 30,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": 50,
+  "elementalResistance": 30,
+  "flameResistance": null,
+  "iceResistance": 10,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": 5,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 20,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Chief's Will"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x8 Erisore",
+   "x2 Frigid Prism",
+   "x1 Odd Tentacle",
+   "x2 Thresher Spine",
+   "x1 Wind Gem"
+  ],
+  "cost": 1000,
+  "requirements": {
+   "stats": {
+    "Power": 15
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Prophet's Cloak",
+  "tier": "Master",
+  "description": "Cloak of a Ministry Prophet.",
+  "durability": 2600,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 25,
+  "flameResistance": 20,
+  "iceResistance": 20,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 50,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Crippling Darkness"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x1 Bloodless Gem",
+   "x5 Vibrant Gem",
+   "x5 Umbral Obsidian",
+   "x1 Dark Feather",
+   "x1 Odd Tentacle",
+   "x1 Thresher Spine"
+  ],
+  "cost": 1000,
+  "requirements": {
+   "stats": {
+    "Power": 15
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Royal Etrean Guard",
+  "tier": "Master",
+  "description": "The armor of the Royal Etrean Guard.",
+  "durability": 3000,
+  "physicalResistance": 30,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 30,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 20,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Paired Soul"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Vibrant Gem",
+   "x10 Umbral Obsidian",
+   "x1 Void Feather",
+   "x1 King Thresher Spine"
+  ],
+  "cost": 1000,
+  "requirements": {
+   "stats": {
+    "Power": 15
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Summer Dragoon",
+  "tier": "Master",
+  "description": "...",
+  "durability": 2800,
+  "physicalResistance": 30,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 30,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": 25,
+  "shadowResistance": null,
+  "metalResistance": 15,
+  "bloodResistance": null,
+  "etherRegeneration": 20,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Sunset Ricochet"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x1 Bloodless Gem",
+   "x5 Vibrant Gem",
+   "x1 Megalodaunt Hide",
+   "x1 Bounder Claw",
+   "x1 Thresher Spine"
+  ],
+  "cost": 1000,
+  "requirements": {
+   "stats": {
+    "Power": 15
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Titanslayer's Adornment",
+  "tier": "Master",
+  "description": "Your very own rightful spoils of war, a gilded adornment made of the furs and skins of Primadon, the mighty Titan of the East. Although the beast is poorly understood, one thing is for certain - its might is overwhelming. This attire is a testament to your victory against it... until the Titan rises again.",
+  "durability": 3300,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 40,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 25,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Primal Rage"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Sinner's Ash",
+   "x1 Primadon Pelt",
+   "x5 Odd Tentacle",
+   "x5 Bloodless Gem",
+   "x3 Thresher Spine",
+   "x3 Dark Feather",
+   "x20 Umbral Obsidian",
+   "x20 Vibrant Gem"
+  ],
+  "cost": 5000,
+  "requirements": {
+   "stats": {
+    "Power": 15,
+    "Strength": 50
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Titus's Raiment",
+  "tier": "Master",
+  "description": "...",
+  "durability": 3000,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 25,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": 10,
+  "windResistance": 10,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 30,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Overwhelming Might"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x3 Might Gem",
+   "x3 Wrath Gem",
+   "x1 Titus Armor Piece",
+   "x1 Warden's Armor Piece"
+  ],
+  "cost": 2500,
+  "requirements": {
+   "stats": {
+    "Power": 15,
+    "Strength": 30
+   }
+  },
+  "image": null,
+  "wiki": "",
+  "VOI": false
+ },
+ {
+  "name": "Windrunner Robes",
+  "tier": "Master",
+  "description": "The flowing robes of a Jetstriker, said to assist in attuning oneself to the Flow of the Song",
+  "durability": 2600,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 30,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": 25,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 50,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Wind Dancer"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x5 Gale Stone",
+   "x5 Vibrant Gem",
+   "x8 Erisore",
+   "x1 Wind Gem"
+  ],
+  "cost": 1000,
+  "requirements": {
+   "stats": {
+    "Power": 15,
+    "Agility": 10
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Authority Commander",
+  "tier": "Unique",
+  "description": "The armored robes of an Authority Commander.",
+  "durability": 2800,
+  "physicalResistance": 30,
+  "slashResistance": null,
+  "bluntResistance": 10,
+  "additionalStealth": null,
+  "elementalResistance": 30,
+  "flameResistance": 10,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 20,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Riot Breaker"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x1 Bounder Claw",
+   "x1 Dark Feather",
+   "x1 Thresher Spine",
+   "x1 Blessed Gem",
+   "x5 Vibrant Gem"
+  ],
+  "cost": 1000,
+  "requirements": {
+   "stats": {
+    "Power": 15
+   },
+   "origin": "Authority Ensign"
+  },
+  "image": null
+ },
+ {
+  "name": "Cindergarb",
+  "tier": "Unique",
+  "description": "Forged from fabric tempered in flame. Cindergard gathers shed embers enhancing your flamecharm ability.",
+  "durability": 3000,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 30,
+  "flameResistance": 20,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": 15,
+  "bloodResistance": null,
+  "etherRegeneration": 75,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Repeated Propulsion",
+   "Warding Radiance"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x5 Dying Ember",
+   "x2 Blessed Gem"
+  ],
+  "cost": 1000,
+  "requirements": {
+   "stats": {
+    "Power": 15,
+    "Flamecharm": 45
+   }
+  },
+  "image": null,
+  "wiki": "",
+  "VOI": false
+ },
+ {
+  "name": "Familiar Assassin's Armor",
+  "tier": "Unique",
+  "description": "Discard your identity.",
+  "durability": 2000,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": 50,
+  "elementalResistance": 25,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 20,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Bane"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber"
+  ],
+  "cost": 15000,
+  "requirements": {
+   "stats": {
+    "Power": 15
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Familiar Demon's Armor",
+  "tier": "Unique",
+  "description": "So ya want to become a bossraid Oni...?",
+  "durability": 2500,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 25,
+  "flameResistance": 10,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Demon Step"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x1 Dread Serpent's Tooth"
+  ],
+  "cost": 15000,
+  "requirements": {
+   "stats": {
+    "Power": 15
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Familiar Heretic's Armor",
+  "tier": "Unique",
+  "description": "Fit only for a traitor.",
+  "durability": 4000,
+  "physicalResistance": 35,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 35,
+  "flameResistance": 5,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": 5,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Soul Rip"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x1 Nightbringer Enchant Stone"
+  ],
+  "cost": 5000,
+  "requirements": {
+   "stats": {
+    "Power": 15
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Familiar Knight's Armor",
+  "tier": "Unique",
+  "description": "You don't know why but a certain Murmur is making you very angry.",
+  "durability": 3500,
+  "physicalResistance": 30,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 40,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 10,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Hyperbody"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x3 Gold",
+   "x5 Heroism Enchant Stone"
+  ],
+  "cost": 5000,
+  "requirements": {
+   "stats": {
+    "Power": 15
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Familiar Occultist's Armor",
+  "tier": "Unique",
+  "description": "The visage of a five-eyed hound enters your mind unsolicited. Brr.",
+  "durability": 2000,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 25,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": 20,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 50,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Life Leech"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x5 Bloodless Gem",
+   "x5 Hemobloom"
+  ],
+  "cost": 10000,
+  "requirements": {
+   "stats": {
+    "Power": 15
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Ferryman's Coat",
+  "tier": "Unique",
+  "description": "Coat of the Krulian horror known as the Ferryman.",
+  "durability": 2500,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": 5,
+  "additionalStealth": null,
+  "elementalResistance": 35,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": 25,
+  "windResistance": 5,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 50,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Ferryman's Curse"
+  ],
+  "craftingMaterials": [
+   "x7 Cloth",
+   "x5 Fiber",
+   "x5 Spark Gland",
+   "x10 Vibrant Gem",
+   "x1 Void Feather"
+  ],
+  "cost": 400,
+  "requirements": {
+   "stats": {
+    "Power": 12
+   }
+  },
+  "image": null,
+  "wiki": "",
+  "VOI": false
+ },
+ {
+  "name": "Heretic's Memento",
+  "tier": "Unique",
+  "description": "All the rage among those with a desire to flaunt the trophies of their achievements. More notoriously donned as a testament to one's strength, though the obnoxiously gold adornments seem to indicate an equally flashy ego to a more keen-eyed observer.",
+  "durability": 2000,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": 10,
+  "additionalStealth": null,
+  "elementalResistance": 25,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": 5,
+  "metalResistance": 25,
+  "bloodResistance": null,
+  "etherRegeneration": 100,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Overflow"
+  ],
+  "craftingMaterials": [
+   "x10 Cloth",
+   "x5 Fiber",
+   "x5 Gold",
+   "x1 Wayward Gem",
+   "x5 Vibrant Gem"
+  ],
+  "cost": 500,
+  "requirements": {
+   "stats": {
+    "Power": 15
+   }
+  },
+  "image": null,
+  "wiki": "",
+  "VOI": false
+ },
+ {
+  "name": "Icebringer's Vestments",
+  "tier": "Unique",
+  "description": "An elegant outfit favoured by expert Frostdrawers. The weavers and seamsters who typically make outfits of this kind are known for their secret techniques, which they use to imbue elemental resistances into the very fabrics they manufacture.",
+  "durability": 2600,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 30,
+  "flameResistance": null,
+  "iceResistance": 25,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 75,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Refreeze",
+   "Orbital Ice"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x5 Frigid Prism",
+   "x5 Vibrant Gem",
+   "x8 Iron",
+   "x1 Blue Gem"
+  ],
+  "cost": 1000,
+  "requirements": {
+   "stats": {
+    "Power": 15,
+    "Frostdraw": 45
+   }
+  },
+  "image": null,
+  "wiki": "",
+  "VOI": false
+ },
+ {
+  "name": "Inquisition Light",
+  "tier": "Unique",
+  "description": "...",
+  "durability": 3200,
+  "physicalResistance": 30,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": 50,
+  "elementalResistance": 35,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": 10,
+  "metalResistance": 10,
+  "bloodResistance": 10,
+  "etherRegeneration": 15,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Lethal Dose"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x3 Wayward Gem",
+   "x3 Void Feather",
+   "x5 Vibrant Gem"
+  ],
+  "cost": null,
+  "requirements": {
+   "stats": {
+    "Power": 15
+   },
+   "objectives": [
+    "Inquisition Division"
+   ],
+   "origin": "Authority Ensign"
+  },
+  "image": null
+ },
+ {
+  "name": "Jade Vigil's Weave",
+  "tier": "Unique",
+  "description": "Masters of the ancient Fang and Coil technique wear this robe as a tribute to their rich heritage. Its verdant weave once served as subtle camouflage, blending seamlessly into the wilds of a forgotten era.",
+  "durability": 3000,
+  "physicalResistance": 30,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 30,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": 20,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": 25,
+  "etherRegeneration": 30,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Serpent's Dance"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x1 Dark Feather",
+   "x5 Gale Stone",
+   "x1 Thresher Spine",
+   "x1 Wind Gem"
+  ],
+  "cost": 1000,
+  "requirements": {
+   "stats": {
+    "Power": 15,
+    "Agility": 10
+   }
+  },
+  "image": null,
+  "wiki": "",
+  "VOI": false
+ },
+ {
+  "name": "Jester's Garb",
+  "tier": "Unique",
+  "description": "A lovely three-piece suit reminiscent of opulence, yet suggestions of prankish intention linger, woven within the argyle. At least if you make a fool of yourself, you're dressed for the part!",
+  "durability": 2500,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": 15,
+  "additionalStealth": null,
+  "elementalResistance": 35,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 50,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Mocking Favor",
+   "Not a Scratch"
+  ],
+  "craftingMaterials": [
+   "x7 Cloth",
+   "x5 Fiber",
+   "x10 Vibrant Gem"
+  ],
+  "cost": 400,
+  "requirements": {
+   "stats": {
+    "Power": 12
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Sanguine Finery",
+  "tier": "Unique",
+  "description": "An elegant outfit favoured by expert Bloodrenders. The weavers and seamsters who typically make outfits of this kind are known for their secret techniques, which they use to imbue elemental resistances into the very fabrics they manufacture.",
+  "durability": 2600,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 30,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": 25,
+  "etherRegeneration": 75,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Focused Hematoma",
+   "Sheltered Grasp"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Heartstar",
+   "x8 Umbrite",
+   "x1 Bloodless Gem",
+   "x5 Vibrant Gem"
+  ],
+  "cost": 1000,
+  "requirements": {
+   "stats": {
+    "Power": 15,
+    "Bloodrend": 45
+   }
+  },
+  "image": null,
+  "wiki": "",
+  "VOI": false
+ },
+ {
+  "name": "Shock Corps Light",
+  "tier": "Unique",
+  "description": "...",
+  "durability": 3500,
+  "physicalResistance": 30,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 30,
+  "flameResistance": 10,
+  "iceResistance": 10,
+  "thunderResistance": 10,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 15,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Battle-Hardened"
+  ],
+  "craftingMaterials": [
+   "x5 Fiber",
+   "x1 Might Gem",
+   "x5 Spark Gland",
+   "x5 Vibrant Gem"
+  ],
+  "cost": null,
+  "requirements": {
+   "stats": {
+    "Power": 15
+   },
+   "objectives": [
+    "Shock Corps Division"
+   ],
+   "origin": "Authority Ensign"
+  },
+  "image": null
+ },
+ {
+  "name": "Stormchanter's Raiments",
+  "tier": "Unique",
+  "description": "An elegant outfit favoured by expert Thundercallers. The weavers and seamsters who typically make outfits of this kind are known for their secret techniques, which they use to imbue elemental resistances into the very fabrics they manufacture.",
+  "durability": 2600,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 30,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": 25,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 75,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Circuit Breaker",
+   "Kickstart"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x5 Spark Galnd",
+   "x5 Vibrant Gem",
+   "x8 Iron",
+   "x1 Insignia Gem"
+  ],
+  "cost": 1000,
+  "requirements": {
+   "stats": {
+    "Power": 15,
+    "Thundercall": 45
+   }
+  },
+  "image": null,
+  "wiki": "",
+  "VOI": false
+ },
+ {
+  "name": "Tempestmaker's Threads",
+  "tier": "Unique",
+  "description": "An elegant outfit favoured by expert Galebreathers. The weavers and seamsters who typically make outfits of this kind are known for their secret techniques, which is to imbue elemental resistances into the very fabrics they manufacture.",
+  "durability": 2600,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 30,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": 25,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 75,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Tempest Evolution",
+   "Aerogliding"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x5 Gale Stone",
+   "x5 Vibrant Gem",
+   "x8 Iron",
+   "x1 Wind Gem"
+  ],
+  "cost": 1000,
+  "requirements": {
+   "stats": {
+    "Power": 15,
+    "Galebreathe": 45
+   }
+  },
+  "image": null,
+  "wiki": "",
+  "VOI": false
+ },
+ {
+  "name": "Trickster's Habit",
+  "tier": "Unique",
+  "description": "Threaded with detailed embroidery and carefully pleated ruffles, this technically impressive garment is sure to turn heads. Frustratingly, the ladder-laced details are especially hard to keep neat-fashion before function.",
+  "durability": 2500,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": 15,
+  "additionalStealth": null,
+  "elementalResistance": 35,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 50,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Mocking Favor",
+   "Not a Scratch"
+  ],
+  "craftingMaterials": [
+   "x7 Cloth",
+   "x5 Fiber",
+   "x10 Vibrant Gem"
+  ],
+  "cost": 400,
+  "requirements": {
+   "stats": {
+    "Power": 12
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Vigil Sentinel",
+  "tier": "Unique",
+  "description": "...",
+  "durability": 2500,
+  "physicalResistance": 30,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 30,
+  "flameResistance": 10,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": 25,
+  "shadowResistance": 10,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 25,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Vigil's Grace",
+   "Action Surge"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x5 Gale Stone",
+   "x5 Vibrant Gem",
+   "x5 Irithine",
+   "x1 Wind Gem"
+  ],
+  "cost": 1000,
+  "requirements": {
+   "stats": {
+    "Power": 10,
+    "Willpower": 5
+   }
+  },
+  "image": null
+ },
+ {
+  "name": "Barbarian",
+  "tier": "Unique",
+  "description": "...",
+  "durability": 1200,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 20,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [],
+  "craftingMaterials": [],
+  "cost": null,
+  "requirements": {
+   "memento": "Beserker"
+  },
+  "image": null
+ },
+ {
+  "name": "Hidden Knife Armor",
+  "tier": "Unique",
+  "description": "Discard your identity.",
+  "durability": 2000,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": 50,
+  "elementalResistance": 25,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 20,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Bane"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber"
+  ],
+  "cost": null,
+  "requirements": {
+   "memento": "Rogue Assassin"
+  },
+  "image": null
+ },
+ {
+  "name": "Strange Merchant",
+  "tier": "Unique",
+  "description": "...",
+  "durability": 9999,
+  "physicalResistance": 10,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 10,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [],
+  "craftingMaterials": [],
+  "cost": null,
+  "requirements": {
+   "memento": "Strange Merchant"
+  },
+  "image": null
+ },
+ {
+  "name": "Unsung",
+  "tier": "Unique",
+  "description": "...",
+  "durability": 3000,
+  "physicalResistance": 30,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": null,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 75,
+  "additionalBuffs": null,
+  "grantedTalents": [],
+  "craftingMaterials": [
+   "x5 Cloth"
+  ],
+  "cost": null,
+  "requirements": {
+   "memento": "Drifter"
+  },
+  "image": null
+ },
+ {
+  "name": "Justicar Neophyte",
+  "tier": "Starter",
+  "description": "Robes given to those who have just joined the journey to help others in need. These are woven to prioritize quick movement if needed.",
+  "durability": 1500,
+  "physicalResistance": 15,
+  "slashResistance": null,
+  "bluntResistance": 5,
+  "additionalStealth": null,
+  "elementalResistance": 15,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": 10,
+  "additionalBuffs": null,
+  "grantedTalents": [],
+  "craftingMaterials": [],
+  "cost": null,
+  "requirements": {
+   "stats": {
+    "Power": 1
+   },
+   "origin": "Justicar"
+  },
+  "image": null,
+  "VOI": false
+ },
+ {
+  "name": "Ringing Scholar's Garb",
+  "tier": "Master",
+  "description": "Knell's refrabricated garb hails from when he was still himself, its designs steeped in his studies of oscillatory sound. Though he was not a resonant soul and the science imperfect in its time, the Indichite infusion is capable of amplifying the soul's resonance- powerful, but increasingly unstable.",
+  "durability": 2400,
+  "physicalResistance": 25,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 30,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": 20,
+  "metalResistance": 25,
+  "bloodResistance": null,
+  "etherRegeneration": 50,
+  "additionalBuffs": "-5 Sanity",
+  "grantedTalents": [
+   "Lose Your Mind"
+  ],
+  "craftingMaterials": [
+   "x2 Cloth",
+   "x2 Fiber",
+   "x2 Arkasid Carapace",
+   "x4 Indichite",
+   "x2 Strange Claw",
+   "x3 Vibrant Gem",
+   "x1 Wayward Gem"
+  ],
+  "cost": 1000,
+  "requirements": {
+   "stats": {
+    "Power": 15,
+    "Intelligence": 5
+   }
+  },
+  "image": null,
+  "wiki": "",
+  "VOI": false
+ },
+ {
+  "name": "",
+  "tier": "None",
+  "description": "",
+  "durability": null,
+  "physicalResistance": null,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": null,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [],
+  "craftingMaterials": [],
+  "cost": null,
+  "requirements": null,
+  "image": null,
+  "wiki": "",
+  "VOI": false
+ },
+ {
+  "name": "11th Legion Plate",
+  "tier": "Adept",
+  "description": "Armor of the 11th Scouting Legion. Akilles brought them here some time ago to observe the coming conflict in the East.",
+  "durability": 1500,
+  "physicalResistance": 10,
+  "slashResistance": null,
+  "bluntResistance": 30,
+  "additionalStealth": null,
+  "elementalResistance": null,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x5 Fiber",
+   "x2 Gold",
+   "x10 Iron"
+  ],
+  "cost": 100,
+  "requirements": {
+   "stats": {
+    "Power": 5,
+    "Fortitude": 10
+   }
+  },
+  "image": null,
+  "wiki": "",
+  "VOI": false
+ },
+ {
+  "name": "Stratos' Cloak",
+  "tier": "Unique",
+  "description": "An honorable gift given in recognition of your heroism. Donning these robes represents the highest anointment granted within the Blade Temple.",
+  "durability": 2200,
+  "physicalResistance": 20,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 30,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": 25,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Breeze"
+  ],
+  "craftingMaterials": [
+   "x5 Cloth",
+   "x10 Erisore",
+   "x2 Strange Claw",
+   "x1 Vibrant Gem",
+   "x1 Wind Gem"
+  ],
+  "cost": null,
+  "requirements": null,
+  "image": null,
+  "wiki": "",
+  "VOI": false
+ },
+ {
+  "name": "Warder's Attire",
+  "tier": "Unique",
+  "description": "Although Warders take a more passive approach to aiding those they wish to see walk the path, they still don armor in preparation for battle, should they need to step onto the front lines.",
+  "durability": 2750,
+  "physicalResistance": 30,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 35,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": 10,
+  "metalResistance": null,
+  "bloodResistance": 10,
+  "etherRegeneration": 30,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Justicar's Gift"
+  ],
+  "craftingMaterials": [],
+  "cost": null,
+  "requirements": {
+   "stats": {
+    "Power": 15
+   },
+   "objectives": [
+    "Warder Path"
+   ],
+   "origin": "Justicar"
+  },
+  "image": null,
+  "wiki": "",
+  "VOI": false
+ },
+ {
+  "name": "Moonseye",
+  "tier": "Unique",
+  "description": "...",
+  "durability": 40000,
+  "physicalResistance": 55,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 35,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": 25,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": null,
+  "grantedTalents": [
+   "Crippling Darkness"
+  ],
+  "craftingMaterials": [],
+  "cost": null,
+  "requirements": {
+   "memento": "Prince of the Moon"
+  },
+  "image": null,
+  "wiki": "",
+  "VOI": true
+ },
+ {
+  "name": "Union Initiate",
+  "tier": "Starter",
+  "description": "",
+  "durability": 1500,
+  "physicalResistance": 15,
+  "slashResistance": null,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": 5,
+  "flameResistance": null,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": "+10 Carry Load",
+  "grantedTalents": [],
+  "craftingMaterials": [],
+  "cost": null,
+  "requirements": {
+   "origin": "Ignition Delver"
+  },
+  "image": null,
+  "wiki": "",
+  "VOI": false
+ },
+ {
+  "name": "Blacksteel Attire",
+  "tier": "Adept",
+  "description": "Attire wrought from forged blacksteel. Its weight hardens the wearer's stance.",
+  "durability": 1000,
+  "physicalResistance": 30,
+  "slashResistance": 10,
+  "bluntResistance": null,
+  "additionalStealth": null,
+  "elementalResistance": null,
+  "flameResistance": 35,
+  "iceResistance": null,
+  "thunderResistance": null,
+  "windResistance": null,
+  "shadowResistance": null,
+  "metalResistance": null,
+  "bloodResistance": null,
+  "etherRegeneration": null,
+  "additionalBuffs": "+8 Posture",
+  "grantedTalents": [],
+  "craftingMaterials": [],
+  "cost": null,
+  "requirements": {
+   "memento": "Iron Vessel"
+  },
+  "image": null,
+  "wiki": "",
+  "VOI": true
+ }
+]

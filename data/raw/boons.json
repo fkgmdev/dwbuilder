@@ -1,0 +1,46 @@
+[
+ {
+  "name": "None",
+  "description": null
+ },
+ {
+  "name": "Autodidact",
+  "description": "You get a free attribute to invest at every level.",
+  "wiki": "Autodidact gives you three **free training points** every Power up. This stacks with Adret's Maudet."
+ },
+ {
+  "name": "Gourmet",
+  "description": "Foods are much more nutritional.",
+  "wiki": "Gourmet increases your saturation gain from eating food by 50%, which is increased to 80% when used in combination with [Gourmand](/wiki/talent/Gourmand). Also increases the 'duration' of food buffs by 50%."
+ },
+ {
+  "name": "Maverick",
+  "description": "Doing things alone yields greater experience.",
+  "wiki": "Increases experience gained while solo."
+ },
+ {
+  "name": "Packmule",
+  "description": "You have a much higher max carry load and can carry much larger quantities of food.",
+  "wiki": "Packmule increases your carry load by 50, item stack limits by 25%, and maximum food stack limit by 5."
+ },
+ {
+  "name": "Scrapper",
+  "description": "You gain an extra Ace every other Whisper Roll.",
+  "wiki": "Grants an Ace at Powers 4, 8, 10, 14, 18, and 20, totalling an additional 6."
+ },
+ {
+  "name": "Sly",
+  "description": "You sweet talk your way out of trouble, gaining less bad reputation from committing crimes.",
+  "wiki": "Grants +15% Stealth. You lose less reputation when committing crimes."
+ },
+ {
+  "name": "Steadfast",
+  "description": "Your armor retains more durability when attacked.",
+  "wiki": "Steadfast grants 25% damage reduction to your armor durability. This stacks multiplicatively with other effects that provide this same bonus."
+ },
+ {
+  "name": "Survivalist",
+  "description": "You are resistant to environmental effects.",
+  "wiki": "Grants immunity to acid rain, as well as slowing parasite accumulation by 33%."
+ }
+]

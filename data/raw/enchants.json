@@ -1,0 +1,403 @@
+[
+ {
+  "name": "Astral",
+  "type": "Weapon",
+  "description": "Grants +20% weapon damage in PvE. Call down stars alongside your critical attacks, and afer parrying thrice.",
+  "effects": "Grants a 20% damage buff to your weapon attacks in PvE. When landing a critical attack or parrying three times, call down stars as an additional attack. This Enchantment bypasses the PvE damage mod cap.",
+  "gif": null,
+  "VOI": false
+ },
+ {
+  "name": "Blazing",
+  "type": "Weapon",
+  "description": "Once enough stacks have been applied, for 5 seconds your attacks will ignite your foes.",
+  "effects": "After 1 Heavy Weapon attack, 2 Medium Weapon attacks, or 3 Light Weapon attacks, your attacks will set your enemies ablaze for 5 seconds.",
+  "gif": "https://static.wikia.nocookie.net/project-deepwoken/images/9/90/Enchant_Blazing.gif"
+ },
+ {
+  "name": "Bluster",
+  "type": "Weapon",
+  "description": "After landing a few stacks of Bluster, start a countdown to an explosion that scales off of your M1 damage. Land attacks during this countdown to make it explode faster. This explosion scales with your weapon investment.",
+  "effects": "After 3 Heavy Weapon attacks, 4 Medium Weapon attacks, or 5 Light Weapon attacks, a 10 second countdown will begin. Land Basic Attacks during this countdown to shorten it by 1 second. When the countdown ends, an explosion that scales off of your current weapon investment occurs. This deals 27.5 + 0.25 × weapon investment damage, capping at 52.5 at 100 weapon.",
+  "gif": null,
+  "VOI": false
+ },
+ {
+  "name": "Chilling",
+  "type": "Weapon",
+  "description": "Chill your foes. Applies Bottom Freeze once enough stacks have been applied.",
+  "effects": "After 3 Heavy Weapon attacks, 4 Medium Weapon attacks, or 5 Light Weapon attacks, your attacks will apply Bottom Freeze to all struck entities. If the wielder has Crystallization, apply an Ice Crystal instead.\nAlternatively in PvE, apply Sluggish, granting a damage debuff for the duration of your Chill.\nPer-victim cooldown of 5 seconds.\nM1s and criticals with the M1 tag gain +4% damage as a separate damage instance, dealt as Frostdraw damage. This will be increased to +10% upon proccing Chilling's hit-based effect.",
+  "gif": null,
+  "wiki": "",
+  "VOI": false
+ },
+ {
+  "name": "Deferred",
+  "type": "Weapon",
+  "description": "Weapon damage is increased by 7%, but becomes damage over time, lasting for 2.5 seconds.",
+  "effects": "Increase the damage of your weapon by 7%, but all of your weapon's damage gets applied over time in increments of 10% per 0.5 seconds. All relevant resistances and buffs are snapshotted when the hit lands.",
+  "gif": null,
+  "VOI": false
+ },
+ {
+  "name": "Detonation",
+  "type": "Weapon",
+  "description": "Once enough stacks have been applied, an explosion is detonated.",
+  "effects": "After 3 Heavy Weapon attacks, 4 Medium Weapon attacks, or 5 Light Weapon attacks, cause an explosion that deals 10 typeless damage in an AoE. Explosions caused by this Enchantment will auto-grip humanoid targets.",
+  "gif": null,
+  "VOI": false
+ },
+ {
+  "name": "Elastic",
+  "type": "Weapon",
+  "description": "Opponents are pulled towards you on hit.",
+  "effects": "Every M1 from your weapon will pull your foes towards you. Procs on criticals with the M1 tag. In PvE, gain damage reduction to Tethered targets, scaling on how far they are away from you.",
+  "gif": null
+ },
+ {
+  "name": "Erebus",
+  "type": "Weapon",
+  "description": "When landing a critical, make your opponent forget how to use a mantra for a minute.",
+  "effects": "On critical attack, put a random one of your opponent's Mantras on a 1 minute cooldown. This can only proc once per critical.",
+  "gif": null
+ },
+ {
+  "name": "Gluttony",
+  "type": "Weapon",
+  "description": "Steals Water and Stomach from those you hit.",
+  "effects": "Every strike from your weapon will leech their Hunger and Thirst. Stolen Hunger and Thirst scales on your weapon's scaled damage.",
+  "gif": null
+ },
+ {
+  "name": "Grim",
+  "type": "Weapon",
+  "description": "Once enough stacks have been applied, Grim is applied for 6 seconds, increasing all incoming damage by 25% and all incoming posture damage by 50%.",
+  "effects": "After 4 Heavy Weapon attacks, 5 Medium Weapon attacks, or 5 Light Weapon attacks, apply Grim to your struck target.\nGrim grants a 25% damage buff and 50% posture damage buff to all incoming attacks.",
+  "gif": null
+ },
+ {
+  "name": "Harrowing",
+  "type": "Weapon",
+  "description": "Obscures your opponent's health, posture, and armor bars. Also causes PvE to get Confusion on successful hits.",
+  "effects": "On strike, hides your opponent's health, posture, and armor totals behind a hideous yellow and purple overlay for 12 seconds. In PvE, apply Confusion for 12 seconds instead. Confused enemies have a 5% chance to hit themselves when they land attacks. Both effects refresh when you land another hit.",
+  "gif": null
+ },
+ {
+  "name": "Heroism",
+  "type": "Weapon",
+  "description": "When above 75% HP, gain 4% damage for every 5% HP above 75%. When below 25% HP, gain 4% damage for every 5% HP below 25% HP. You can reflect negative status effects with light attacks or criticals to your opponent.",
+  "effects": "For every 5% Health above 75% or below 25% you currently are, deal an additional 4% damage.\nYou will deal 1.2x damage at both 100% Health and 0% Health.\nOn strike, transfer certain negative status effects from yourself to your opponent.",
+  "gif": null
+ },
+ {
+  "name": "Kyrsan Chill",
+  "type": "Weapon",
+  "description": "On critical hits, apply a slow that increases with each crit. At 5 stacks fully encase your opponent in ice.",
+  "effects": "Apply a stacking slow when you land a critical attack, with subsequent hits increasing the stack count. At 5 stacks, apply a full Freeze effect.",
+  "gif": null
+ },
+ {
+  "name": "Metal",
+  "type": "Weapon",
+  "description": "Steal Armor durability on hit.",
+  "effects": "On strike, drain your opponent's armor value to replenish your own. These effects scale on your weapon's scaled damage, and the respective person's maximum armor durability.",
+  "gif": null
+ },
+ {
+  "name": "Nemesis",
+  "type": "Weapon",
+  "description": "Your critical attack is replaced with Nemesis. Basic attacks now mark your enemies, allowing you to critical attack to teleport to them.",
+  "effects": "Basic attacks will mark your enemies with a pinkish-red eye. Your critical attack will teleport you to all marked targets within 65-70 studs, dealing 25 damage or 18 posture damage.\nYour critical attack is similar to that of the Katana critical, procs critical talents, and copies most properties of your normal swings.",
+  "gif": null
+ },
+ {
+  "name": "Nightbringer",
+  "type": "Weapon",
+  "description": "",
+  "effects": "On hit, steal Ether from your opponent based on your scaled damage. Ether steal is reduced if the target has general resistances.\nAdditionally, you can proc certain Shadowcast Talents on hit.\n[*Additional Note: This Enchantment will do nothing if you have not completed the Gaunt Man's Trial on your current character.]",
+  "gif": null
+ },
+ {
+  "name": "Obfuscation",
+  "type": "Weapon",
+  "description": "You gain some chip damage on m1 and crit.",
+  "effects": "Your attacks now have chip damage dependant on your Weapon type -- Heavy Weapons gain 25% chip damage, Medium Weapons gain 20% chip damage, and Light Weapons gain 15% chip damage.\nChip damage added by this Enchantment is additive to weapon chip.",
+  "gif": null
+ },
+ {
+  "name": "Parasol's Blight",
+  "type": "Weapon",
+  "description": "Hitting a player infects their body with Parasol's Blight. If a player who is infected is killed, their corpse is turned into one of the Parasol's Minions. This also has a chance of proccing on PvE enemies you kill.",
+  "effects": "On weapon attack, apply the Parasol Blight status effect. This effect lasts for 60 seconds, and has no visual indicator. If a player with this status effect dies, their corpse will explode and a monster from the below list will spawn. PvE enemies have a small chance of proccing this Enchant as well.\nMudskipper Broodlord, Alpha Megalodaunt, Void Thresher, Nautilodaunt, Prime Megalodaunt. These enemies can spawn corrupted if you are in The Depths.\n[*Additional Note: This Enchantment will do nothing if you have not completed the Gaunt Man's Trial on your current character.]",
+  "gif": null
+ },
+ {
+  "name": "Providence Thorns",
+  "type": "Weapon",
+  "description": "Parrying attacks damages your foes.",
+  "effects": "In PvE: Parrying an attack will proc this Enchantment, dealing 10% of your weapon's damage multiplied by your Power Level.\nIn PvP: Parrying three attacks within three seconds will proc this Enchantment, dealing 4% of your opponent's maximum health.\nAdditional damage granted by this Enchantment is capped at 500.",
+  "gif": null
+ },
+ {
+  "name": "Sear",
+  "type": "Weapon",
+  "description": "Weapon gains 5% PEN. Applies Cauterize on hit for 15s, as well as draining their Water. Cauterized foes take more PEN the more stacks are applied.",
+  "effects": "Your weapon gains an additional 5% Penetration, applies Cauterize on hit for 15 seconds, and drains 20% of scaled and unmodified damage in Thirst.\nCauterized foes will take additional Penetration as more stacks are applied, which do not refresh. Stacks decay individually.\n\nHeavy Weapons will gain an additional 10% PEN per hit. Medium Weapons will gain an additional 8% PEN per hit. Light Weapons will gain an additional 5.45% PEN per hit.\nYou can gain a maximum of 40% PEN -- bypassing the PEN cap.",
+  "gif": null
+ },
+ {
+  "name": "Solar",
+  "type": "Weapon",
+  "description": "Applies a Solar Mark on critical attack or flourish. Solar Marks last 8s and reduce Tempo gain and Ether regeneration. Your Vents drain the Tempo of those you've marked.",
+  "effects": "Your critical attacks, uppercuts, and flourishes apply a Solar Mark to struck opponents for 8 seconds, reducing Tempo gain and Ether regeneration.\nLanding a Vent on a marked target drains their Tempo, paying for the cost of your Vent. If your opponent cannot afford your Vent's Tempo cost, you will pay for the difference with your own Tempo.\nIn PvE, gain a 10,000% Vent damage buff against Solar-affected targets.",
+  "gif": null
+ },
+ {
+  "name": "Stone",
+  "type": "Weapon",
+  "description": "Do extra true damage whenever you guardbreak an opponent with a light attack or critical.",
+  "effects": "Deal 0.25 extra true damage for every 1 weapon investment when your weapon attacks guardbreak.",
+  "gif": null
+ },
+ {
+  "name": "Storm",
+  "type": "Weapon",
+  "description": "Shock your foes on hit every 5s. Rain will upgrade this shock into a lightning bolt called down from above.",
+  "effects": "On strike, deal 16.5% of your weapon's damage, post resistances, as Thundercall damage with a 5 second cooldown.\nThis is doubled to 33% of your weapon's damage instead if it is raining.",
+  "gif": null
+ },
+ {
+  "name": "Stormbreaker",
+  "type": "Weapon",
+  "description": "Your critical attack is replaced with Stormbreaker Hurl, alloying you to launch your weapon. Shock your foes on hit every 5s. Occasionally, a lightning bolt may be called down from above.",
+  "effects": "On strike, deal 16.5% of your weapon's damage as Thundercall damage with a 5 second cooldown.\nThis is doubled to 33% of your weapon's damage instead if it is raining.\nYour critical attack is replaced with Stormbreaker Hurl. On critical, throw your weapon at your opponent. This deals 40 flat Thundercall damage on throw and 30 Flat thundercall damage on return.\nYou cannot act while your weapon is away.",
+  "gif": null
+ },
+ {
+  "name": "Suffocated",
+  "type": "Weapon",
+  "description": "Landing a critical, uppercut, flourish, or offhand attack procs suffocation.",
+  "effects": "Upon landing a critical, uppercut, flourish, or offhand attack, apply Suffocation for a short duration.",
+  "gif": null
+ },
+ {
+  "name": "Tears of the Edenkite",
+  "type": "Weapon",
+  "description": "On critical attacks and flourishes, produce homing bubble projectiles. 20s CD.",
+  "effects": "When you use your critical attack or flourish, you emit a number of projectiles that home in on your struck opponent. These projectiles stun on hit.\nThis Enchantment has a 20 second cooldown.",
+  "gif": null
+ },
+ {
+  "name": "Umbral Knight",
+  "type": "Weapon",
+  "description": "On hit, the Umbral Knight will strike your foes for 20% of your weapon's damage after a 0.25s delay. 5s CD.",
+  "effects": "When you strike an opponent, the Umbral Knight will deal an additional 20% of your weapon's damage in a parryable attack after a 0.25 second delay.\nThis Enchantment has a 5 second cooldown.",
+  "gif": null
+ },
+ {
+  "name": "Vampirism",
+  "type": "Weapon",
+  "description": "Your weapon attacks drain health from your foes and replenish your blood.",
+  "effects": "Upon striking your opponents, you'll gain 15% of the damage dealt as Temporary Health, as well as some blood.\nThis Enchantment has reduced effects on the Scion of Ethiron and Primadon, and has heavily reduced effects on Chaser, Scholar of the Crimson Contract.",
+  "gif": null
+ },
+ {
+  "name": "Windswept",
+  "type": "Weapon",
+  "description": "After landing enough stacks, proc winded on your opponent. The duration scales with your weapon investment.",
+  "effects": "After landing 1 Heavy Weapon attack, 2 Medium Weapon Attacks, or 3 Light Weapon Attacks, apply Winded to your opponent, lowering their swingspeed. The duration of this effect scales on your Weapon investment.\nThis Enchantment has a 5 second cooldown regardless of weapon investment. Minimum duration of 0.5 seconds.\nEvery 1 weapon investment increases the winded duration (from 0) by 0.08 seconds, up to 8 seconds at 100 Weapon.",
+  "gif": null
+ },
+ {
+  "name": "Wild",
+  "type": "Weapon",
+  "description": "On hit, deal 85% of your weapon's damage in an AoE. This AoE cannot hit allies or the enemy originally hit. Reduces your damage against allies by 50%.",
+  "effects": "On strike, 85% of your weapons scaled damage will be dealt in an AoE, dealt as typeless damage. This cannot hit the original target.\nDeals 50% of your weapon's scaled damage to allies instead.",
+  "gif": null
+ },
+ {
+  "name": "Curse of the Authoritative",
+  "type": "Weapon",
+  "description": "On critical, uppercut, or flourish, apply Authoritative on your opponent making them take 50% more posture damage. When you get guardbroken, take 50% more damage.",
+  "effects": "You take 50% more damage upon being guardbroken. On Flourish, Uppercut, or Critical Attack, apply the Authoritative status effect to yourself, increasing all posture damage you deal by 50% for 30 seconds.",
+  "gif": null
+ },
+ {
+  "name": "Curse of the Bloodthirsty",
+  "type": "Weapon",
+  "description": "Deal +10% weapon damage and drain the blood of your foes, but suffer blood loss if your weapon attacks miss.",
+  "effects": "On strike, deal an additional 10% damage and drain the blood of those struck. If you miss an attack, your blood will be drained.",
+  "gif": null
+ },
+ {
+  "name": "Curse of the No Life King",
+  "type": "Weapon",
+  "description": "Grants passive regen and damages the sanity of your foes, but succumb to insanity much faster, lose twice as much blood, and never be more than a step away from death.",
+  "effects": "You gain passive Health regeneration, scaling on your weapon investment, but take double the amount of blood loss. The health regeneration scales down in effectiveness the more maximum health you have. With this Enchantment equipped, you have a permanently stained health bar. The stained healthbar duration will be increased by 60 seconds after taking damage, potentially staying after you change weapons. Landing basic attacks reduces your opponent's Sanity by 2%.If your weapon is unsheathed while in the First Layer, you will lose 2 Sanity every second. Upon reaching 0 Sanity by any means, your head will pop, instantly killing you. This Enchantment is disabled in Chime, and disables your Viscosity.",
+  "gif": null,
+  "VOI": false
+ },
+ {
+  "name": "Curse of Repulsion",
+  "type": "Weapon",
+  "description": "When you block attacks, you knock your attacker backwards. You receive +30% chip damage.",
+  "effects": "When you block attacks, your opponent will be knocked backwards with a 2.5 second cooldown. If this procs, take 30% chip damage from the attack.",
+  "gif": null,
+  "VOI": false
+ },
+ {
+  "name": "Curse of the Unbidden",
+  "type": "Weapon",
+  "description": "Your critical attack is replaced with Unbidden Counter, restoring posture and stunning your attacker. Your attacks drain Ether on hit.",
+  "effects": "Your basic attacks drain Ether. Your critical attack is replaced with Unbidden Counter, which restores 30% of your current posture when landed. Successfully countering an unknown number of times will cause your critical to be changed to a stronger variant that applies knockdown.",
+  "gif": null,
+  "VOI": false
+ },
+ {
+  "name": "Curse of Void",
+  "type": "Weapon",
+  "description": "Every enemy you slay while equipping this weapon will always be Drowned. Enemies hit will also experience reduced healing. It also applies 10 seconds of Ether Sunder to PvE enemies.",
+  "effects": "When landing an attack, apply the Void status effect. This effect lasts for 30 seconds, applying 40% anti-heal.If a player with this status effect dies, they will instantly drown and be sent to the Depths. In PvE, this applies Ether Sunder for 10 seconds, granting 30% elemental damage reduction against affected targets.With this Enchantment equipped, you have a permanently stained health bar. [*Additional Note: This Enchantment will do nothing if you have not completed the Gaunt Man's Trial on your current character.]",
+  "gif": null,
+  "VOI": false
+ },
+ {
+  "name": "Curse of Ysley's Ember",
+  "type": "Weapon",
+  "description": "Once enough stacks have been applied, the Fire of Life germinates. The explosion deals a random amount of damage and grants temporary health to the affected targets.",
+  "effects": "After 3 Heavy Weapon attacks, 4 Medium Weapon attacks, or 5 Light Weapon attacks, cause an explosion and apply green burn. The explosion deals a random amount of damage, between 5.5 and 37. The explosion gives your opponent a random amount of Temporary Health, between 0 and 50.",
+  "gif": null,
+  "VOI": false
+ },
+ {
+  "name": "Curse of Yun'Shul",
+  "type": "Weapon",
+  "description": "Has a chance to inflict a curse that deals percentage damage, but who it falls upon is often down to luck.",
+  "effects": "On strike, this has a chance to proc. On proc deal 6% of your maximum health on Heavy Weapons, 4.5% of your maximum health on Medium Weapons, or 3% of your maximum health on Light Weapons to your opponent. There is a chance however that you will instead take 7% of your maximum health as damage. No matter who the curse is inflicted on, there will be a 10 second cooldown before it can be inflicted again.",
+  "gif": null,
+  "VOI": false
+ },
+ {
+  "name": "JOE's",
+  "type": "Spec Weapon",
+  "description": "It stands for Judicator's Original Enchantment. An enchant that was supposed to be only for the strongest of monster slayers. No one knows what happened to the original Judicator who made this enchant.",
+  "effects": "On weapon attack, gain JOE's stacks. Upon using your critical, consume your stacks to stop time in an AoE around yourself.\nThe time stop duration is increased by 1s for every stack you had, up to a maximum of 15s for 15 stacks.\nUpon being guardbroken, negate the stun.",
+  "gif": null
+ },
+ {
+  "name": "Life Weave",
+  "type": "Spec Weapon",
+  "description": "Unknown.",
+  "effects": "A supercharged attack on proc (Punch) but also replenishes the opponent's Hunger by a small amount. Contains a move similar to the Hive Mech's Lifeweave Flourish that sprouts trees in the area around the user at a high rate.",
+  "gif": null
+ },
+ {
+  "name": "Tainted Sorrow",
+  "type": "Spec Weapon",
+  "description": "Unknown.",
+  "effects": "On hit, the critical attack is replaced with the ability to pull/fling the victim towards the user with a corresponding small pillar effect. Flourishing makes al subsequent attacks fling the target upward.",
+  "gif": null
+ },
+ {
+  "name": "Unstable",
+  "type": "Spec Weapon",
+  "description": "Unknown.",
+  "effects": "Every hit has a 10% chance to proc any Enchantment. Each enchantment rolls independantly from eachother, allowing for multiple enchant procs at once.",
+  "gif": null
+ },
+ {
+  "name": "Adhesive",
+  "type": "Equipment",
+  "description": "Pulls your attacker towards you.",
+  "effects": "Upon getting hit, there is a 33% chance to pull your opponents towards you.",
+  "gif": null
+ },
+ {
+  "name": "Allure",
+  "type": "Equipment",
+  "description": "Incoming hits may Charm your attacker for 10s.",
+  "effects": "Upon getting hit by an M1 attack, there is a 50% chance to Charm your attacker for 10 seconds.",
+  "gif": null
+ },
+ {
+  "name": "Bounce",
+  "type": "Equipment",
+  "description": "Incoming hits may bounce your attacker away.",
+  "effects": "Upon getting hit, there is a 20% chance to push your attacker away, making it more difficult to chain attacks and land combos.",
+  "gif": null
+ },
+ {
+  "name": "Displacement",
+  "type": "Equipment",
+  "description": "Incoming hits may proc Displacement, granting a speed boost and clearing all stuns present.",
+  "effects": "Upon getting hit, there is a 20% chance to proc Displacement. Displacement grants you a 4 second speed boost, clears all present stuns, and grants Hyperarmor.",
+  "gif": null
+ },
+ {
+  "name": "Drowned",
+  "type": "Equipment",
+  "description": "Bolster the stats of your equipment, adding an additional +10 Health, +10 Ether, +5% Damage vs. Monsters, and +5% Monster Armor.",
+  "effects": "Increase the stats of your Equipment with an additional 10 Health, 10 Ether, 5% Damage vs. Monsters and 5% Monster Armor.",
+  "gif": null
+ },
+ {
+  "name": "Entanglement",
+  "type": "Equipment",
+  "description": "Incoming hits may proc Entangled Defence, reducing your speed in exchange for 10% damage reduction.",
+  "effects": "Upon getting hit, there is a 20% chance to proc Entangled Defence. This effect reduces your speed, but grants a 10% damage reduction for the next 5 seconds.",
+  "gif": null
+ },
+ {
+  "name": "Ferocity",
+  "type": "Equipment",
+  "description": "Incoming hits may proc a speed boost and deal reduced damage. Both the speed boost and damage reduction scale with your current Tempo.",
+  "effects": "Upon getting hit, there is a 25% chance to grant a speed boost and take reduced damage, each scaling with your current Tempo.\nThe speed boost starts at +8% at 0 Tempo, scaling up to +40% at maximum Tempo. The damage reduction starts at 0% at 0 Tempo, scaling up to 15% at maximum Tempo.",
+  "gif": null
+ },
+ {
+  "name": "Multiplicity",
+  "type": "Equipment",
+  "description": "Incoming hits may grant you a random boon of Recovery, Healing, or Agility. 5s CD.",
+  "effects": "Upon getting hit by a weapon attack, there is a 20% chance to be temporarily granted a bonus of Hunger/Thirst/Blood, Healing, or a speed boost.\nThis Enchantment has a 5 second cooldown.",
+  "gif": null
+ },
+ {
+  "name": "Rain",
+  "type": "Equipment",
+  "description": "Incoming hits may summon rain clouds above you.",
+  "effects": "Upon getting hit, there is a 12.5% chance to create a raincloud above your head. This Enchantment has a 45 second cooldown.\nIf you have Stench on another equipment piece or are in Upper Erisia, create an Acid Rain cloud instead. If you have Chilling on your weapon or are at Minityrsa, create a snow cloud instead.\n[*Additional Note: This Enchantment will do nothing if you have not completed the Gaunt Man's Trial on your current character.]",
+  "gif": null
+ },
+ {
+  "name": "Stench",
+  "type": "Equipment",
+  "description": "Incoming hits may produce a Stench Cloud, gradually draining 3% of their health if not blocked.",
+  "effects": "Upon getting hit, there is a 20% chance to summon a stench cloud at your location. This will deal 3% of the maximum health of anyone who enters the range.\nThis cannot deal more than 10 damage per tick.",
+  "gif": null
+ },
+ {
+  "name": "Viscosity",
+  "type": "Equipment",
+  "description": "Incoming damage is converted into damage over time applied for 2.5s.",
+  "effects": "When taking damage, that damage is dealt over increments of 10% every 0.25 seconds, similarly to the Deferred Weapon Enchantment.\nThis Enchantment is disabled by Curse of the No Life King.\nAll relevant resistances and buffs are snapshotted when the attacks land.",
+  "gif": null
+ },
+ {
+  "name": "Ether Surge",
+  "type": "Weapon",
+  "description": "Landing enough light attacks gives you infinite ether for some time.",
+  "effects": "After landing 5 M1s, Ether Surge gives the user infinite Ether for 10 seconds. Landing additional hits while this is active will extend the duration.",
+  "gif": null,
+  "wiki": "",
+  "VOI": true
+ },
+ {
+  "name": "Curse of the Covetous",
+  "type": "Weapon",
+  "description": "Emboyding the a avarice of the wealthy, a Vow innate to this enchantment grants ts strength according to the material wealth its user is able to put on the line, but will cause said wealth to spill from your pockets should you be injured. Should you run low on money, the Vow will even begin to draw from the material value of your own body, reducing your strength.",
+  "effects": "Your weapon's base damage is reduced by -7.5%, but it gains +0.01% for every Note you have. The net damage buff is +0% at 7.5k Notes, and +7.5% at 15k Notes. Upon taking damage, lose Notes equal to the damage taken. Upon dealing damage with a weapon attack, your opponent will lose 50 Notes.",
+  "gif": null,
+  "wiki": "",
+  "VOI": false
+ }
+]

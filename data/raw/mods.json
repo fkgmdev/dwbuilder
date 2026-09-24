@@ -1,0 +1,370 @@
+[
+ {
+  "name": "Grim",
+  "bucket": "Normal",
+  "requires": [],
+  "requiresEnchant": "Grim",
+  "effect": {
+   "dmg": 0.25
+  },
+  "notes": "While the target has Grim."
+ },
+ {
+  "name": "Sear (full stacks)",
+  "bucket": "Unique",
+  "requires": [],
+  "requiresEnchant": "Sear",
+  "effect": {
+   "pen": 0.4
+  },
+  "notes": "Up to 40% extra PEN from Cauterize, past the PEN cap. Sear also adds 5% base PEN."
+ },
+ {
+  "name": "Shade Devour",
+  "bucket": "Normal",
+  "requires": [
+   "Mantra: Shade Devour"
+  ],
+  "effect": {
+   "dmg": 0.25
+  }
+ },
+ {
+  "name": "Manipulator",
+  "bucket": "Normal",
+  "requires": [
+   "Manipulator"
+  ],
+  "effect": {
+   "dmg": 0.2
+  }
+ },
+ {
+  "name": "Ardour Scream",
+  "bucket": "Normal",
+  "requires": [
+   "Ardour Scream"
+  ],
+  "effect": {
+   "dmg": 0.125
+  }
+ },
+ {
+  "name": "Pressure Break",
+  "bucket": "Normal",
+  "requires": [
+   "Pressure Break"
+  ],
+  "effect": {
+   "dmg": 0.25
+  }
+ },
+ {
+  "name": "Speed Demon",
+  "bucket": "Normal",
+  "requires": [
+   "Speed Demon"
+  ],
+  "effect": {
+   "bleed": 0.075
+  },
+  "notes": "+7.5% bleed rate."
+ },
+ {
+  "name": "Charged Return",
+  "bucket": "Normal",
+  "requires": [
+   "Charged Return"
+  ],
+  "effect": {
+   "dmg": 0.1
+  }
+ },
+ {
+  "name": "Matador",
+  "bucket": "Normal",
+  "requires": [
+   "Matador"
+  ],
+  "effect": {
+   "dmg": 0.2
+  }
+ },
+ {
+  "name": "Mark of the Lone Warrior",
+  "bucket": "Normal",
+  "requires": [
+   "Mark of the Lone Warrior"
+  ],
+  "effect": {
+   "dmg": 0.05
+  }
+ },
+ {
+  "name": "Ardour Weapon",
+  "bucket": "Normal",
+  "requires": [],
+  "requiresMeta": {
+   "murmur": [
+    "Ardour"
+   ],
+   "oath": [
+    "Soulbreaker"
+   ]
+  },
+  "effect": {
+   "dmg": 0.025
+  }
+ },
+ {
+  "name": "Soulbreaker Ardour",
+  "bucket": "Normal",
+  "requires": [],
+  "requiresMeta": {
+   "oath": [
+    "Soulbreaker"
+   ]
+  },
+  "effect": {
+   "dmg": 0.025
+  }
+ },
+ {
+  "name": "Lose Your Mind",
+  "bucket": "Normal",
+  "requires": [
+   "Lose Your Mind"
+  ],
+  "effect": {
+   "dmg": 0.15
+  },
+  "notes": "Up to +15% at low sanity. f(x) = 15 − 15 × (x/0.7)^1.2 with x = current sanity / max sanity, clamped to [0, 0.7]."
+ },
+ {
+  "name": "Taunt",
+  "bucket": "Normal",
+  "requires": [
+   "Mantra: Taunt"
+  ],
+  "effect": {
+   "dmg": 0.2
+  }
+ },
+ {
+  "name": "Nullifying Clarity",
+  "bucket": "Normal",
+  "requires": [
+   "Nullifying Clarity"
+  ],
+  "effect": {
+   "dmg": 0.1
+  }
+ },
+ {
+  "name": "Overflowing Dam",
+  "bucket": "Normal",
+  "requires": [
+   "Overflowing Dam"
+  ],
+  "effect": {
+   "dmg": 0.1
+  },
+  "notes": "Up to +10%. 0.125% per point of Intelligence below the cap; reaches 5% at 0 INT and tops out at the 10% maximum."
+ },
+ {
+  "name": "Tough Love",
+  "bucket": "Normal",
+  "requires": [
+   "Tough Love"
+  ],
+  "effect": {
+   "dmg": 0.1
+  }
+ },
+ {
+  "name": "Flame Within",
+  "bucket": "Normal",
+  "requires": [
+   "Flame Within"
+  ],
+  "effect": {
+   "dmg": 0.1
+  }
+ },
+ {
+  "name": "Last Resort",
+  "bucket": "Normal",
+  "requires": [
+   "Last Resort"
+  ],
+  "effect": {
+   "dmg": 0.05
+  }
+ },
+ {
+  "name": "Exposed Durability",
+  "bucket": "Normal",
+  "requires": [
+   "Exposed Durability"
+  ],
+  "effect": {
+   "dmg": 0.1
+  }
+ },
+ {
+  "name": "Spinning Swordsman",
+  "bucket": "Normal",
+  "requires": [
+   "Spinning Swordsman"
+  ],
+  "effect": {
+   "dmg": 0.15
+  }
+ },
+ {
+  "name": "Wyvern's Claw",
+  "bucket": "Normal",
+  "requires": [
+   "Wyvern's Claw"
+  ],
+  "effect": {
+   "dmg": 0.1
+  }
+ },
+ {
+  "name": "Reshape and Remold",
+  "bucket": "Normal",
+  "requires": [
+   "Reshape and Remold"
+  ],
+  "effect": {
+   "dmg": 0.05
+  }
+ },
+ {
+  "name": "Underdog",
+  "bucket": "Normal",
+  "requires": [
+   "Underdog"
+  ],
+  "effect": {
+   "dmg": 0.04
+  },
+  "notes": "Up to +4% damage. Caps at 60 WP. 0.0375% per WP point below the cap."
+ },
+ {
+  "name": "Rush Hour",
+  "bucket": "Normal",
+  "requires": [
+   "Rush Hour"
+  ],
+  "effect": {
+   "dmg": 0.15
+  },
+  "notes": ""
+ },
+ {
+  "name": "Reinforce",
+  "bucket": "Normal",
+  "requires": [
+   "Mantra: Reinforce"
+  ],
+  "effect": {
+   "dmg": 0.05
+  },
+  "notes": "+5% damage when reinforcing an ally, +2.5% when self-reinforcing."
+ },
+ {
+  "name": "Amped",
+  "bucket": "Normal",
+  "requires": [
+   "Electrify"
+  ],
+  "effect": {
+   "dmg": 0.1
+  }
+ },
+ {
+  "name": "Amplified Rage",
+  "bucket": "Normal",
+  "requires": [
+   "Amplified Rage"
+  ],
+  "effect": {
+   "dmg": 0.1
+  },
+  "notes": "Adds 10% on top of Amped for 20% total."
+ },
+ {
+  "name": "Piercing Will",
+  "bucket": "Normal",
+  "requires": [
+   "Piercing Will"
+  ],
+  "effect": {
+   "pen": 0.15
+  }
+ },
+ {
+  "name": "Cult of Personality",
+  "bucket": "Normal",
+  "requires": [
+   "Cult of Personality"
+  ],
+  "effect": {
+   "pen": 0.15
+  }
+ },
+ {
+  "name": "Thresher Claws",
+  "bucket": "Normal",
+  "requires": [
+   "Thresher Claws"
+  ],
+  "effect": {
+   "pen": 0.1
+  }
+ },
+ {
+  "name": "Cheap Shot",
+  "bucket": "Normal",
+  "requires": [
+   "Cheap Shot"
+  ],
+  "effect": {
+   "pen": 0.1
+  },
+  "multiplicative": false,
+  "notes": "Multiplicative. 30% pen becomes 33% with this on. Multiplier is reduced by 0.11% for every Agility point below 65."
+ },
+ {
+  "name": "Million Ton Piercer",
+  "bucket": "Normal",
+  "requires": [
+   "Million Ton Piercer"
+  ],
+  "effect": {
+   "pen": 0.05
+  }
+ },
+ {
+  "name": "Ether Overdrive",
+  "bucket": "Normal",
+  "requires": [
+   "Ether Overdrive"
+  ],
+  "effect": {
+   "pen": 0.05
+  }
+ },
+ {
+  "name": "After Cut",
+  "bucket": "Unique",
+  "requires": [
+   "After Cut"
+  ],
+  "effect": {
+   "dmg": 0.1
+  }
+ }
+]

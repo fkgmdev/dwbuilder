@@ -1,0 +1,1 @@
+import{e as s,c as a,Z as o,o as n,_ as t}from"./KwKd8cfB.js";const _={class:"panel border"},c=s({__name:"Panel",setup(r){return(e,l)=>(n(),a("div",_,[o(e.$slots,"default",{},void 0,!0)]))}}),d=Object.assign(t(c,[["__scopeId","data-v-37c2668b"]]),{__name:"UiPanel"});export{d as P};
