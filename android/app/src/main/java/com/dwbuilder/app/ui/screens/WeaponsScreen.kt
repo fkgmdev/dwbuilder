@@ -13,7 +13,6 @@ import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
-import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.FilledTonalIconButton
 import androidx.compose.material3.FilterChip
@@ -40,6 +39,7 @@ import com.dwbuilder.app.ui.BuilderViewModel
 import com.dwbuilder.app.ui.components.ChoiceChipRow
 import com.dwbuilder.app.ui.components.DetailRow
 import com.dwbuilder.app.ui.components.DropdownCell
+import com.dwbuilder.app.ui.components.ListRowCard
 import com.dwbuilder.app.ui.components.RarityChip
 import com.dwbuilder.app.ui.components.SectionHeader
 import com.dwbuilder.app.ui.components.StatStepper
@@ -64,8 +64,10 @@ fun WeaponsScreen(vm: BuilderViewModel) {
         data.weapons.values.sortedBy { it.name }.filter { family == "All" || it.type == family }
     }
     val selected = build.weapon.takeIf { it.isNotEmpty() }?.let { data.weapon(it) }
-    val breakdown = selected?.let { w ->
-        DamageRules.compute(DamageRules.DamageSource.weapon(w), build, data.mods, tuning = build.tuning)
+    val breakdown = remember(build, selected) {
+        selected?.let { w ->
+            DamageRules.compute(DamageRules.DamageSource.weapon(w), build, data.mods, tuning = build.tuning)
+        }
     }
 
     LazyColumn(
@@ -83,7 +85,7 @@ fun WeaponsScreen(vm: BuilderViewModel) {
         if (selected != null && breakdown != null) {
             item { WeaponBreakdown(vm, build, data, selected, breakdown) }
         }
-        items(weapons, key = { it.name }) { w ->
+        items(weapons, key = { it.name }, contentType = { "weapon" }) { w ->
             WeaponRow(
                 weapon = w,
                 selected = w.name == build.weapon,
@@ -95,28 +97,26 @@ fun WeaponsScreen(vm: BuilderViewModel) {
 
 @Composable
 private fun WeaponRow(weapon: Weapon, selected: Boolean, onClick: () -> Unit) {
-    ElevatedCard(
-        onClick = onClick,
+    ListRowCard(
+        selected = selected,
         modifier = Modifier.fillMaxWidth(),
-        colors = CardDefaults.elevatedCardColors(
-            containerColor = if (selected) MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.45f)
-            else MaterialTheme.colorScheme.surfaceContainerHigh,
-        ),
-    ) {
-        Row(Modifier.fillMaxWidth().padding(12.dp), verticalAlignment = Alignment.CenterVertically) {
-            Column(Modifier.weight(1f)) {
-                Text(weapon.name, style = MaterialTheme.typography.titleSmall)
-                Text(
-                    "${weapon.type} · ${num(weapon.damage)} dmg · ${weapon.damageTypes.joinToString("/")}",
-                    style = MaterialTheme.typography.labelSmall,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                    maxLines = 1,
-                    overflow = TextOverflow.Ellipsis,
-                )
+        onClick = onClick,
+        content = {
+            Row(Modifier.fillMaxWidth().padding(12.dp), verticalAlignment = Alignment.CenterVertically) {
+                Column(Modifier.weight(1f)) {
+                    Text(weapon.name, style = MaterialTheme.typography.titleSmall)
+                    Text(
+                        "${weapon.type} · ${num(weapon.damage)} dmg · ${weapon.damageTypes.joinToString("/")}",
+                        style = MaterialTheme.typography.labelSmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis,
+                    )
+                }
+                RarityChip(weapon.rarity)
             }
-            RarityChip(weapon.rarity)
-        }
-    }
+        },
+    )
 }
 
 @Composable

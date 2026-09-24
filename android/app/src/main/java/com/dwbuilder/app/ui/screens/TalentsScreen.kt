@@ -13,7 +13,6 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Check
 import androidx.compose.material.icons.filled.Search
-import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.FilterChip
 import androidx.compose.material3.Icon
@@ -21,6 +20,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -36,14 +36,25 @@ import com.dwbuilder.app.domain.Requirements
 import com.dwbuilder.app.domain.TalentRules
 import com.dwbuilder.app.domain.model.Talent
 import com.dwbuilder.app.ui.BuilderViewModel
+import com.dwbuilder.app.ui.components.ListRowCard
 import com.dwbuilder.app.ui.components.RarityChip
+import kotlinx.coroutines.delay
 
 @Composable
 fun TalentsScreen(vm: BuilderViewModel) {
     val data = vm.data ?: return
     val build = vm.build
     var query by rememberSaveable { mutableStateOf("") }
+    var debouncedQuery by rememberSaveable { mutableStateOf("") }
     var rarityFilter by rememberSaveable { mutableStateOf("All") }
+
+    // Debounce keystrokes so filtering 1150+ records never runs per keypress.
+    LaunchedEffect(query) {
+        if (query != debouncedQuery) {
+            delay(120)
+            debouncedQuery = query
+        }
+    }
 
     val ctx = remember(build) { BuildContext(build, data.talents, data.weapons) }
     val takenNames = build.talents
@@ -56,12 +67,12 @@ fun TalentsScreen(vm: BuilderViewModel) {
         listOf("All") + data.talents.values.mapNotNull { it.rarity }.distinct().sorted()
     }
     val all = remember(data) { data.talents.values.sortedBy { it.name } }
-    val filtered = remember(query, rarityFilter, all) {
+    val filtered = remember(debouncedQuery, rarityFilter, all) {
         all.filter { t ->
             (rarityFilter == "All" || t.rarity == rarityFilter) &&
-                (query.isBlank() ||
-                    t.name.contains(query, ignoreCase = true) ||
-                    t.description.contains(query, ignoreCase = true))
+                (debouncedQuery.isBlank() ||
+                    t.name.contains(debouncedQuery, ignoreCase = true) ||
+                    t.description.contains(debouncedQuery, ignoreCase = true))
         }
     }
 
@@ -88,7 +99,7 @@ fun TalentsScreen(vm: BuilderViewModel) {
             }
         }
         item { TalentCountSummary(takenNames.size, caps, faction) }
-        items(filtered, key = { it.name }) { talent ->
+        items(filtered, key = { it.name }, contentType = { "talent" }) { talent ->
             TalentRow(
                 talent = talent,
                 taken = talent.name in takenNames,
@@ -134,49 +145,47 @@ private fun TalentRow(
         talent.rarity == "Innate" && talent.requirements?.aspect != null -> "Requires the ${talent.requirements.aspect} race"
         else -> null
     }
-    ElevatedCard(
-        onClick = onClick,
+    ListRowCard(
+        selected = taken,
         enabled = eligible,
         modifier = Modifier.fillMaxWidth(),
-        colors = CardDefaults.elevatedCardColors(
-            containerColor = if (taken) MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.45f)
-            else MaterialTheme.colorScheme.surfaceContainerHigh,
-        ),
-    ) {
-        Column(Modifier.fillMaxWidth().padding(12.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                Text(talent.name, modifier = Modifier.weight(1f), style = MaterialTheme.typography.titleSmall)
-                if (taken) {
-                    Icon(Icons.Filled.Check, contentDescription = "Taken", tint = MaterialTheme.colorScheme.primary)
+        onClick = onClick,
+        content = {
+            Column(Modifier.fillMaxWidth().padding(12.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Text(talent.name, modifier = Modifier.weight(1f), style = MaterialTheme.typography.titleSmall)
+                    if (taken) {
+                        Icon(Icons.Filled.Check, contentDescription = "Taken", tint = MaterialTheme.colorScheme.primary)
+                    }
+                    RarityChip(talent.rarity)
                 }
-                RarityChip(talent.rarity)
-            }
-            if (!talent.category.isNullOrBlank()) {
-                Text(talent.category, style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.primary)
-            }
-            Text(
-                talent.description,
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                maxLines = 2,
-                overflow = TextOverflow.Ellipsis,
-            )
-            if (talent.vaulted) {
-                Text("Vaulted — no longer obtainable", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.error)
-            }
-            when {
-                !eligible -> Text(
-                    reason ?: "Not obtainable for this build",
-                    style = MaterialTheme.typography.labelSmall,
-                    color = MaterialTheme.colorScheme.error,
+                if (!talent.category.isNullOrBlank()) {
+                    Text(talent.category, style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.primary)
+                }
+                Text(
+                    talent.description,
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    maxLines = 2,
+                    overflow = TextOverflow.Ellipsis,
                 )
-                warning != null -> Text(
-                    warning,
-                    style = MaterialTheme.typography.labelSmall,
-                    color = if (check.hardMet) MaterialTheme.colorScheme.tertiary else MaterialTheme.colorScheme.error,
-                )
-                else -> Text("Requirements met", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.tertiary)
+                if (talent.vaulted) {
+                    Text("Vaulted — no longer obtainable", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.error)
+                }
+                when {
+                    !eligible -> Text(
+                        reason ?: "Not obtainable for this build",
+                        style = MaterialTheme.typography.labelSmall,
+                        color = MaterialTheme.colorScheme.error,
+                    )
+                    warning != null -> Text(
+                        warning,
+                        style = MaterialTheme.typography.labelSmall,
+                        color = if (check.hardMet) MaterialTheme.colorScheme.tertiary else MaterialTheme.colorScheme.error,
+                    )
+                    else -> Text("Requirements met", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.tertiary)
+                }
             }
-        }
-    }
+        },
+    )
 }

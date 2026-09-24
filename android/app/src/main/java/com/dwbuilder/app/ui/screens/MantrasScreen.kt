@@ -15,7 +15,6 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Check
 import androidx.compose.material.icons.filled.Search
-import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.FilterChip
 import androidx.compose.material3.Icon
@@ -25,6 +24,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.SuggestionChip
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -38,14 +38,24 @@ import com.dwbuilder.app.data.GameData
 import com.dwbuilder.app.domain.MantraRules
 import com.dwbuilder.app.domain.model.Mantra
 import com.dwbuilder.app.ui.BuilderViewModel
+import com.dwbuilder.app.ui.components.ListRowCard
 import com.dwbuilder.app.ui.components.num
+import kotlinx.coroutines.delay
 
 @Composable
 fun MantrasScreen(vm: BuilderViewModel) {
     val data = vm.data ?: return
     val build = vm.build
     var query by rememberSaveable { mutableStateOf("") }
+    var debouncedQuery by rememberSaveable { mutableStateOf("") }
     var categoryFilter by rememberSaveable { mutableStateOf("All") }
+
+    LaunchedEffect(query) {
+        if (query != debouncedQuery) {
+            delay(120)
+            debouncedQuery = query
+        }
+    }
 
     val oath = data.oath(build.oath)
     val slots = remember(build.talents, oath) { MantraRules.availableSlots(build.talents, oath) }
@@ -55,12 +65,12 @@ fun MantrasScreen(vm: BuilderViewModel) {
 
     val categories = listOf("All") + MantraRules.SLOT_CATEGORIES
     val all = remember(data) { data.mantras.values.sortedBy { it.name } }
-    val filtered = remember(query, categoryFilter, all) {
+    val filtered = remember(debouncedQuery, categoryFilter, all) {
         all.filter { m ->
             (categoryFilter == "All" || m.category == categoryFilter) &&
-                (query.isBlank() ||
-                    m.name.contains(query, ignoreCase = true) ||
-                    m.description.contains(query, ignoreCase = true))
+                (debouncedQuery.isBlank() ||
+                    m.name.contains(debouncedQuery, ignoreCase = true) ||
+                    m.description.contains(debouncedQuery, ignoreCase = true))
         }
     }
 
@@ -87,7 +97,7 @@ fun MantrasScreen(vm: BuilderViewModel) {
                 }
             }
         }
-        items(filtered, key = { it.name }) { mantra ->
+        items(filtered, key = { it.name }, contentType = { "mantra" }) { mantra ->
             MantraRow(
                 mantra = mantra,
                 taken = mantra.name in build.mantras,
@@ -132,51 +142,49 @@ private fun SlotSummary(slots: Map<String, Int>, assigned: MantraRules.AssignedS
 private fun MantraRow(mantra: Mantra, taken: Boolean, canAdd: Boolean, onClick: () -> Unit) {
     val level1 = mantra.damage.firstOrNull()?.levels?.firstOrNull()
     val scaling = mantra.scaling.entries.joinToString(" ") { (attunement, factor) -> "$attunement ×${num(factor)}" }
-    ElevatedCard(
-        onClick = onClick,
+    ListRowCard(
+        selected = taken,
         enabled = taken || canAdd,
         modifier = Modifier.fillMaxWidth(),
-        colors = CardDefaults.elevatedCardColors(
-            containerColor = if (taken) MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.45f)
-            else MaterialTheme.colorScheme.surfaceContainerHigh,
-        ),
-    ) {
-        Column(Modifier.fillMaxWidth().padding(12.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                Text(mantra.name, modifier = Modifier.weight(1f), style = MaterialTheme.typography.titleSmall)
-                if (taken) {
-                    Icon(Icons.Filled.Check, contentDescription = "Taken", tint = MaterialTheme.colorScheme.primary)
-                    Surface(
-                        color = MaterialTheme.colorScheme.secondaryContainer,
-                        shape = MaterialTheme.shapes.small,
-                        modifier = Modifier.padding(start = 6.dp),
-                    ) {
-                        Text(mantra.category, style = MaterialTheme.typography.labelSmall, modifier = Modifier.padding(horizontal = 8.dp, vertical = 3.dp))
+        onClick = onClick,
+        content = {
+            Column(Modifier.fillMaxWidth().padding(12.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Text(mantra.name, modifier = Modifier.weight(1f), style = MaterialTheme.typography.titleSmall)
+                    if (taken) {
+                        Icon(Icons.Filled.Check, contentDescription = "Taken", tint = MaterialTheme.colorScheme.primary)
+                        Surface(
+                            color = MaterialTheme.colorScheme.secondaryContainer,
+                            shape = MaterialTheme.shapes.small,
+                            modifier = Modifier.padding(start = 6.dp),
+                        ) {
+                            Text(mantra.category, style = MaterialTheme.typography.labelSmall, modifier = Modifier.padding(horizontal = 8.dp, vertical = 3.dp))
+                        }
                     }
                 }
-            }
-            Text(
-                mantra.description,
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                maxLines = 2,
-                overflow = TextOverflow.Ellipsis,
-            )
-            val attrText = mantra.attributes.joinToString(" / ")
-            Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-                if (level1?.damage != null) {
-                    Text("L1 ${num(level1.damage)}", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.primary)
+                Text(
+                    mantra.description,
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    maxLines = 2,
+                    overflow = TextOverflow.Ellipsis,
+                )
+                val attrText = mantra.attributes.joinToString(" / ")
+                Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                    if (level1?.damage != null) {
+                        Text("L1 ${num(level1.damage)}", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.primary)
+                    }
+                    if (attrText.isNotBlank()) {
+                        Text("· $attrText", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    }
                 }
-                if (attrText.isNotBlank()) {
-                    Text("· $attrText", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                if (scaling.isNotBlank()) {
+                    Text("Scaling: $scaling", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                }
+                if (mantra.vaulted) {
+                    Text("Vaulted", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.error)
                 }
             }
-            if (scaling.isNotBlank()) {
-                Text("Scaling: $scaling", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
-            }
-            if (mantra.vaulted) {
-                Text("Vaulted", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.error)
-            }
-        }
-    }
+        },
+    )
 }
