@@ -56,12 +56,18 @@ fun TalentsScreen(vm: BuilderViewModel) {
         }
     }
 
-    val ctx = remember(build) { BuildContext(build, data.talents, data.weapons) }
+    val ctx = remember(build, data) {
+        BuildContext(
+            build, data.talents, data.weapons,
+            grantedTalents = granted(build, data),
+        )
+    }
     val takenNames = build.talents
 
     val nonExempt = TalentRules.nonExemptMantraCount(build, data::mantra)
     val caps = TalentRules.caps(nonExempt)
-    val faction = TalentRules.factionCount(build, data::talent, emptySet())
+    val faction = TalentRules.factionCount(build, data::talent, granted(build, data))
+    val grantedCount = granted(build, data).size
 
     val rarities = remember(data) {
         listOf("All") + data.talents.values.mapNotNull { it.rarity }.distinct().sorted()
@@ -98,7 +104,7 @@ fun TalentsScreen(vm: BuilderViewModel) {
                 }
             }
         }
-        item { TalentCountSummary(takenNames.size, caps, faction) }
+        item { TalentCountSummary(takenNames.size, caps, faction, grantedCount) }
         items(filtered, key = { it.name }, contentType = { "talent" }) { talent ->
             TalentRow(
                 talent = talent,
@@ -112,7 +118,7 @@ fun TalentsScreen(vm: BuilderViewModel) {
 }
 
 @Composable
-private fun TalentCountSummary(takenCount: Int, caps: TalentRules.TalentCaps, faction: Int) {
+private fun TalentCountSummary(takenCount: Int, caps: TalentRules.TalentCaps, faction: Int, grantedCount: Int) {
     ElevatedCard(Modifier.fillMaxWidth()) {
         Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
             Text(
@@ -121,13 +127,20 @@ private fun TalentCountSummary(takenCount: Int, caps: TalentRules.TalentCaps, fa
                 color = if (takenCount > caps.maxTotal) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurface,
             )
             Text(
-                "Roll 2 pool: ${caps.roll2} · Faction: $faction / ${TalentRules.MAX_FACTION}",
+                "Roll 2 pool: ${caps.roll2} · Faction: $faction / ${TalentRules.MAX_FACTION}" +
+                    (if (grantedCount > 0) " · Gear grants: $grantedCount" else ""),
                 style = MaterialTheme.typography.labelMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
         }
     }
 }
+
+/** Talents granted by equipped gear (armor, outfit, weapon) — site's granted set. */
+private fun granted(build: com.dwbuilder.app.domain.model.Build, data: GameData): Set<String> =
+    build.equipment.values.mapNotNull(data::equipmentItem).flatMap { it.innateTalents }.toSet() +
+        (build.outfit.takeIf { it.isNotEmpty() }?.let { data.outfit(it) }?.grantedTalents.orEmpty()) +
+        (build.weapon.takeIf { it.isNotEmpty() }?.let { data.weapon(it) }?.grantedTalents.orEmpty())
 
 @Composable
 private fun TalentRow(

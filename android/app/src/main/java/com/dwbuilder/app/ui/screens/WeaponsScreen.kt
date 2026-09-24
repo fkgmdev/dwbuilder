@@ -11,14 +11,17 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.FilledTonalIconButton
 import androidx.compose.material3.FilterChip
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Slider
 import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
@@ -30,10 +33,12 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.dwbuilder.app.data.GameData
 import com.dwbuilder.app.domain.DamageRules
+import com.dwbuilder.app.domain.PveRules
 import com.dwbuilder.app.domain.model.Weapon
 import com.dwbuilder.app.ui.BuilderViewModel
 import com.dwbuilder.app.ui.components.ChoiceChipRow
@@ -42,7 +47,6 @@ import com.dwbuilder.app.ui.components.DropdownCell
 import com.dwbuilder.app.ui.components.ListRowCard
 import com.dwbuilder.app.ui.components.RarityChip
 import com.dwbuilder.app.ui.components.SectionHeader
-import com.dwbuilder.app.ui.components.StatStepper
 import com.dwbuilder.app.ui.components.num
 
 /** The five stat rings plus the three special rings (site's weapon-tab ring toggles). */
@@ -274,6 +278,254 @@ private fun WeaponBreakdown(
             if (bd.dps > 0) {
                 DetailRow("DPS", num(bd.dps))
             }
+
+            HorizontalDivider()
+            PveCalculator(data, weapon, bd)
+        }
+    }
+}
+
+/**
+ * PvE calculator — the site's weapon-tab tool. Derives the monster-scale power
+ * from the weapon's primary scaling stat, the weapon hit from the breakdown's
+ * final damage, and DVM effectiveness at the default 100%.
+ */
+@Composable
+private fun PveCalculator(data: GameData, weapon: Weapon, bd: DamageRules.Breakdown) {
+    var enemyQuery by rememberSaveable { mutableStateOf("") }
+    var enemyName by rememberSaveable { mutableStateOf("") }
+    var custom by rememberSaveable { mutableStateOf(false) }
+    var hpMinText by rememberSaveable { mutableStateOf("1000") }
+    var hpMaxText by rememberSaveable { mutableStateOf("1000") }
+    var dvm by rememberSaveable { mutableStateOf(0) }
+    var msOverride by rememberSaveable { mutableStateOf(false) }
+    var msManual by rememberSaveable { mutableStateOf(false) }
+    var resistMin by rememberSaveable { mutableStateOf(25) }
+    var resistMax by rememberSaveable { mutableStateOf(25) }
+    var staggered by rememberSaveable { mutableStateOf(false) }
+    var astral by rememberSaveable { mutableStateOf(false) }
+    var magma by rememberSaveable { mutableStateOf(false) }
+    var attunement by rememberSaveable { mutableStateOf("None") }
+    var variantId by rememberSaveable { mutableStateOf("") }
+
+    val primary = bd.scalingContributions.maxByOrNull { it.contribution }
+    val power = primary?.investment ?: 1.0
+
+    val matches = remember(enemyQuery) {
+        val q = enemyQuery.trim()
+        if (q.length < 2) emptyList()
+        else data.enemies.filter { e ->
+            e.name.contains(q, ignoreCase = true) || e.aliases.any { it.contains(q, ignoreCase = true) }
+        }.take(24)
+    }
+    val enemy = remember(enemyName) {
+        enemyName.takeIf { it.isNotEmpty() }?.let { n -> data.enemies.find { it.name == n } }
+    }
+    val info = remember(enemy) { enemy?.let { PveRules.analyze(it) } }
+    val monsterScaling = if (msOverride) msManual else (info?.monsterScaling ?: false)
+
+    val hpMin = hpMinText.toIntOrNull() ?: 0
+    val hpMax = hpMaxText.toIntOrNull() ?: 0
+    val health: List<Double>? = when {
+        custom -> if (hpMin <= 0 || hpMax < hpMin) null else listOf(hpMin.toDouble(), hpMax.toDouble())
+        else -> info?.let { PveRules.hpFor(it, variantId.takeIf { v -> v.isNotEmpty() }) }
+    }
+
+    val result = remember(
+        bd, weapon, enemyName, custom, hpMin, hpMax, dvm, msOverride, msManual,
+        resistMin, resistMax, staggered, astral, magma, attunement, variantId, health,
+    ) {
+        val h = health
+        if (h == null) null
+        else PveRules.hit(
+            PveRules.HitInput(
+                weaponDamage = bd.finalDamage,
+                power = power,
+                dvmPct = dvm.toDouble(),
+                dvmEffectiveness = 1.0,
+                monsterScaling = monsterScaling,
+                health = h,
+                resistance = listOf(resistMin.toDouble(), resistMax.toDouble()),
+                staggered = staggered,
+                penetration = bd.effectivePenetration,
+                astral = astral,
+                magmaGuard = magma,
+                attunement = attunement,
+                damageTypes = weapon.damageTypes,
+            ),
+        )
+    }
+
+    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        Text("PvE Calculator", style = MaterialTheme.typography.titleMedium)
+        Text(
+            "Weapon hit ${num(bd.finalDamage)}" +
+                (primary?.let { " · power ${num(it.investment, 0)} (${it.stat})" } ?: ""),
+            style = MaterialTheme.typography.labelSmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+        )
+
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Text(
+                if (custom) "Custom enemy" else "Enemy: ${enemyName.ifEmpty { "none" }}",
+                modifier = Modifier.weight(1f),
+                style = MaterialTheme.typography.bodyMedium,
+                maxLines = 1,
+                overflow = TextOverflow.Ellipsis,
+            )
+            Text("Custom", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            Switch(checked = custom, onCheckedChange = { custom = it })
+        }
+
+        if (custom) {
+            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                OutlinedTextField(
+                    value = hpMinText,
+                    onValueChange = { hpMinText = it.filter(Char::isDigit).take(7) },
+                    modifier = Modifier.weight(1f),
+                    label = { Text("HP min") },
+                    singleLine = true,
+                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
+                )
+                OutlinedTextField(
+                    value = hpMaxText,
+                    onValueChange = { hpMaxText = it.filter(Char::isDigit).take(7) },
+                    modifier = Modifier.weight(1f),
+                    label = { Text("HP max") },
+                    singleLine = true,
+                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
+                )
+            }
+        } else {
+            OutlinedTextField(
+                value = enemyQuery,
+                onValueChange = { enemyQuery = it },
+                modifier = Modifier.fillMaxWidth(),
+                placeholder = { Text("Search enemies…") },
+                leadingIcon = { Icon(Icons.Filled.Search, contentDescription = null) },
+                singleLine = true,
+            )
+            if (matches.isNotEmpty()) {
+                Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                    matches.forEach { e ->
+                        val h = PveRules.analyze(e).hp
+                        ListRowCard(
+                            selected = e.name == enemyName,
+                            onClick = {
+                                enemyName = e.name
+                                enemyQuery = ""
+                                variantId = ""
+                            },
+                            content = {
+                                Row(Modifier.fillMaxWidth().padding(10.dp)) {
+                                    Column(Modifier.weight(1f)) {
+                                        Text(e.name, style = MaterialTheme.typography.bodyMedium)
+                                        Text(
+                                            e.className + (h?.let { " · ${num(it[0], 0)} HP" } ?: ""),
+                                            style = MaterialTheme.typography.labelSmall,
+                                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                        )
+                                    }
+                                }
+                            },
+                        )
+                    }
+                }
+            }
+            if (info != null && info.variants.isNotEmpty()) {
+                ChoiceChipRow(
+                    options = listOf("Base") + info.variants.map { it.label },
+                    selected = variantId.ifEmpty { "Base" },
+                    onSelect = { variantId = if (it == "Base") "" else it },
+                )
+            }
+        }
+
+        Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
+            Text("Damage vs monsters: $dvm%", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            Slider(value = dvm.toFloat(), onValueChange = { dvm = it.toInt() }, valueRange = 0f..100f)
+        }
+
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Text(
+                "Monster scaling${if (!msOverride && info != null) " (auto: ${if (info.monsterScaling) "yes" else "no"})" else ""}",
+                modifier = Modifier.weight(1f),
+                style = MaterialTheme.typography.bodyMedium,
+            )
+            Switch(
+                checked = monsterScaling,
+                onCheckedChange = {
+                    msOverride = true
+                    msManual = it
+                },
+            )
+        }
+
+        Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
+            Text("Enemy resistance: $resistMin% – $resistMax%", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Text("min", modifier = Modifier.weight(1f), style = MaterialTheme.typography.labelSmall)
+                Slider(
+                    value = resistMin.toFloat(),
+                    onValueChange = {
+                        val v = it.toInt().coerceAtMost(resistMax)
+                        resistMin = v
+                    },
+                    valueRange = 0f..100f,
+                    modifier = Modifier.weight(3f),
+                )
+            }
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Text("max", modifier = Modifier.weight(1f), style = MaterialTheme.typography.labelSmall)
+                Slider(
+                    value = resistMax.toFloat(),
+                    onValueChange = {
+                        val v = it.toInt().coerceAtLeast(resistMin)
+                        resistMax = v
+                    },
+                    valueRange = 0f..100f,
+                    modifier = Modifier.weight(3f),
+                )
+            }
+        }
+
+        Column(verticalArrangement = Arrangement.spacedBy(0.dp)) {
+            Text("Attunement", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            ChoiceChipRow(
+                options = PveRules.ATTUNEMENT_FLAVORS,
+                selected = attunement,
+                onSelect = { attunement = it },
+            )
+        }
+
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Text("Staggered", modifier = Modifier.weight(1f), style = MaterialTheme.typography.bodyMedium)
+            Switch(checked = staggered, onCheckedChange = { staggered = it })
+        }
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Text("Astral", modifier = Modifier.weight(1f), style = MaterialTheme.typography.bodyMedium)
+            Switch(checked = astral, onCheckedChange = { astral = it })
+        }
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Text("Magma Guard", modifier = Modifier.weight(1f), style = MaterialTheme.typography.bodyMedium)
+            Switch(checked = magma, onCheckedChange = { magma = it })
+        }
+
+        HorizontalDivider()
+        Text("Results", style = MaterialTheme.typography.titleMedium)
+        val r = result
+        if (r == null) {
+            Text(
+                "Pick an enemy or enable Custom to see results.",
+                style = MaterialTheme.typography.labelSmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+        } else {
+            DetailRow("Monster power mult", "×${num(r.powerMultiplier)}")
+            DetailRow("DVM applied", "${num(r.effectiveDvm)}%")
+            DetailRow("Raw hit", num(r.rawHit))
+            DetailRow("Damage per hit", "${num(r.damage[0])} – ${num(r.damage[1])}")
+            DetailRow("Hits to kill", "${num(r.hits[0], 0)} – ${num(r.hits[1], 0)}")
         }
     }
 }

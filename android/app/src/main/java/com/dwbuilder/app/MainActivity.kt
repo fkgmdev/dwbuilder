@@ -13,8 +13,10 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawing
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Build
+import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.List
 import androidx.compose.material.icons.filled.Person
+import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
@@ -34,8 +36,10 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.dwbuilder.app.ui.BuilderViewModel
+import com.dwbuilder.app.ui.screens.EquipmentScreen
 import com.dwbuilder.app.ui.screens.MantrasScreen
 import com.dwbuilder.app.ui.screens.StatsScreen
+import com.dwbuilder.app.ui.screens.SummaryScreen
 import com.dwbuilder.app.ui.screens.TalentsScreen
 import com.dwbuilder.app.ui.screens.WeaponsScreen
 import com.dwbuilder.app.ui.theme.BuilderTheme
@@ -47,6 +51,8 @@ private val TABS = listOf(
     Tab("Talents", Icons.Filled.Star),
     Tab("Mantras", Icons.Filled.List),
     Tab("Weapons", Icons.Filled.Build),
+    Tab("Equipment", Icons.Filled.Settings),
+    Tab("Summary", Icons.Filled.Info),
 )
 
 class MainActivity : ComponentActivity() {
@@ -110,7 +116,9 @@ private fun AppScaffold(vm: BuilderViewModel) {
                     0 -> StatsScreen(vm)
                     1 -> TalentsScreen(vm)
                     2 -> MantrasScreen(vm)
-                    else -> WeaponsScreen(vm)
+                    3 -> WeaponsScreen(vm)
+                    4 -> EquipmentScreen(vm)
+                    else -> SummaryScreen(vm)
                 }
             }
         }

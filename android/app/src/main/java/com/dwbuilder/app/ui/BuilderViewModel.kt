@@ -9,6 +9,8 @@ import androidx.lifecycle.viewModelScope
 import com.dwbuilder.app.data.DataProvider
 import com.dwbuilder.app.data.GameData
 import com.dwbuilder.app.domain.Points
+import com.dwbuilder.app.domain.Transfer
+import com.dwbuilder.app.domain.model.Attributes
 import com.dwbuilder.app.domain.model.Build
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -143,5 +145,41 @@ class BuilderViewModel(app: Application) : AndroidViewModel(app) {
     fun toggleMod(name: String) = patch {
         val m = it.tuning.enabledMods
         it.copy(tuning = it.tuning.copy(enabledMods = if (name in m) m - name else m + name))
+    }
+
+    // ----- equipment / outfit -----
+
+    /** Equip or clear (name = "") an item in one of the 7 slots. */
+    fun setEquipment(slot: String, name: String) = patch {
+        it.copy(equipment = if (name.isEmpty()) it.equipment - slot else it.equipment + (slot to name))
+    }
+
+    fun setOutfit(name: String) = patch { it.copy(outfit = name) }
+
+    // ----- import (in-game transfer text) -----
+
+    /**
+     * Applies in-game build text onto the current build. Names that don't exist
+     * in the bundled catalogs are dropped (transfer text may embed mantra names
+     * inside the talents section, mirroring the site's section-slicing quirk).
+     */
+    fun importTransfer(text: String) {
+        val d = data ?: return
+        if (text.isBlank()) return
+        val parsed = Transfer.parse(text)
+        val talents = parsed.talents.distinct().filter { d.talent(it) != null }
+        val mantras = parsed.mantras.distinct().filter { d.mantra(it) != null }
+        patch { b ->
+            b.copy(
+                name = parsed.name.ifBlank { b.name },
+                level = parsed.level,
+                race = parsed.race,
+                origin = parsed.origin,
+                oath = if (parsed.oath.equals("None", ignoreCase = true)) b.oath else parsed.oath,
+                attributes = Attributes(parsed.base, parsed.weapon, parsed.attunement),
+                talents = talents,
+                mantras = mantras,
+            )
+        }
     }
 }
